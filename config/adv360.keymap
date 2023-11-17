@@ -118,6 +118,26 @@
         key-positions = <41 42>; // J & K
         bindings = <&kp ENTER>;
       };
+      combo_db_underscore {
+        timeout-ms = <70>;
+        key-positions = <41 42 43>; // J, K & L
+        bindings = <&kp UNDERSCORE &kp UNDERSCORE>;
+      };
+      combo_underscore {
+        timeout-ms = <70>;
+        key-positions = <42 43>; // K & L
+        bindings = <&kp UNDERSCORE>;
+      };
+      combo_db_minus {
+        timeout-ms = <70>;
+        key-positions = <55 56 57>; // M, COMMA & DOT
+        bindings = <&kp MINUS &kp MINUS>;
+      };
+      combo_minus {
+        timeout-ms = <70>;
+        key-positions = <56 57>; // COMMA & DOT
+        bindings = <&kp MINUS>;
+      };
     };
 
   keymap {
