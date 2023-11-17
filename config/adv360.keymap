@@ -99,6 +99,23 @@
       };
     };
 
+    combos {
+      compatible = "zmk,combos";
+      // Left Hand
+      combo_tab {
+        timeout-ms = <70>;
+        key-positions = <31 32>; // D & F
+        bindings = <&kp TAB>;
+      };
+
+      // Right Hand
+      combo_enter {
+        timeout-ms = <70>;
+        key-positions = <41 42>; // J & K
+        bindings = <&kp ENTER>;
+      };
+    };
+
   keymap {
     compatible = "zmk,keymap";
 
