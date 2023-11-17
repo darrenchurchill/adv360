@@ -63,6 +63,7 @@
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
           hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
+          hold-trigger-on-release;
       };
 
       lh_lt: lh_layer_tap {
@@ -74,6 +75,7 @@
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
           hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
+          hold-trigger-on-release;
       };
 
       rh_hm: rh_homerow_mods {
@@ -85,6 +87,7 @@
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
           hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
+          hold-trigger-on-release;
       };
 
       rh_lt: rh_layer_tap {
@@ -96,6 +99,7 @@
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
           hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
+          hold-trigger-on-release;
       };
     };
 
