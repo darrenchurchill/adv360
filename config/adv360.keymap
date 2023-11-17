@@ -119,6 +119,11 @@
         key-positions = <32 33>; // F & G
         bindings = <&kp SLASH>;
       };
+      combo_grave {
+        timeout-ms = <70>;
+        key-positions = <49 50>; // C & V
+        bindings = <&kp GRAVE>;
+      };
 
       // Right Hand
       combo_question {
