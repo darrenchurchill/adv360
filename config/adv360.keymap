@@ -111,8 +111,18 @@
         key-positions = <31 32>; // D & F
         bindings = <&kp TAB>;
       };
+      combo_slash {
+        timeout-ms = <70>;
+        key-positions = <32 33>; // F & G
+        bindings = <&kp SLASH>;
+      };
 
       // Right Hand
+      combo_question {
+        timeout-ms = <70>;
+        key-positions = <40 41>; // H & J
+        bindings = <&kp QUESTION>;
+      };
       combo_enter {
         timeout-ms = <70>;
         key-positions = <41 42>; // J & K
