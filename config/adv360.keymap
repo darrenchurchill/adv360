@@ -109,6 +109,16 @@
     combos {
       compatible = "zmk,combos";
       // Left Hand
+      combo_lh_sys_reset {
+        timeout-ms = <70>;
+        key-positions = <1 2 3>; // First 3 number keys
+        bindings = <&sys_reset>;
+      };
+      combo_lh_bootloader {
+        timeout-ms = <70>;
+        key-positions = <1 2 3 4>; // First 4 number keys
+        bindings = <&bootloader>;
+      };
       combo_tab {
         timeout-ms = <70>;
         key-positions = <31 32>; // D & F
@@ -126,6 +136,16 @@
       };
 
       // Right Hand
+      combo_rh_sys_reset {
+        timeout-ms = <70>;
+        key-positions = <10 11 12>; // Last 3 number keys
+        bindings = <&sys_reset>;
+      };
+      combo_rh_bootloader {
+        timeout-ms = <70>;
+        key-positions = <9 10 11 12>; // Last 4 number keys
+        bindings = <&bootloader>;
+      };
       combo_question {
         timeout-ms = <70>;
         key-positions = <40 41>; // H & J
