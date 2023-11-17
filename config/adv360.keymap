@@ -110,6 +110,12 @@
 
     combos {
       compatible = "zmk,combos";
+      // Both Hands
+      combo_caps_word {
+        timeout-ms = <70>;
+        key-positions = <31 42>; // D & K
+        bindings = <&caps_word>;
+      };
       // Left Hand
       combo_lh_sys_reset {
         timeout-ms = <70>;
