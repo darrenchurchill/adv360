@@ -63,7 +63,7 @@
           compatible = "zmk,behavior-hold-tap";
           label = "LEFT_HAND_HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <300>;
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
@@ -75,7 +75,7 @@
           compatible = "zmk,behavior-hold-tap";
           label = "LEFT_HAND_LAYER_TAP";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <300>;
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
@@ -87,7 +87,7 @@
           compatible = "zmk,behavior-hold-tap";
           label = "RIGHT_HAND_HOMEROW_MODS";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <300>;
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
@@ -99,7 +99,7 @@
           compatible = "zmk,behavior-hold-tap";
           label = "RIGHT_HAND_LAYER_TAP";
           #binding-cells = <2>;
-          tapping-term-ms = <200>;
+          tapping-term-ms = <300>;
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
