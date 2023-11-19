@@ -64,66 +64,7 @@
 
     combos {
       compatible = "zmk,combos";
-      // Both Hands
-      combo_caps_word {
-        timeout-ms = <70>;
-        key-positions = <31 42>; // D & K
-        bindings = <&caps_word>;
-      };
-      // Left Hand
-      combo_esc {
-        timeout-ms = <70>;
-        key-positions = <31 32>; // D & F
-        bindings = <&kp ESC>;
-      };
-      combo_slash {
-        timeout-ms = <70>;
-        key-positions = <32 33>; // F & G
-        bindings = <&kp SLASH>;
-      };
-      combo_grave {
-        timeout-ms = <70>;
-        key-positions = <49 50>; // C & V
-        bindings = <&kp GRAVE>;
-      };
-
-      // Right Hand
-      combo_question {
-        timeout-ms = <70>;
-        key-positions = <40 41>; // H & J
-        bindings = <&kp QUESTION>;
-      };
-      combo_enter {
-        timeout-ms = <70>;
-        key-positions = <41 42>; // J & K
-        bindings = <&kp ENTER>;
-      };
-      combo_db_underscore {
-        timeout-ms = <70>;
-        key-positions = <41 42 43>; // J, K & L
-        bindings = <&kp UNDERSCORE &kp UNDERSCORE>;
-      };
-      combo_underscore {
-        timeout-ms = <70>;
-        key-positions = <42 43>; // K & L
-        bindings = <&kp UNDERSCORE>;
-      };
-      combo_db_minus {
-        timeout-ms = <70>;
-        key-positions = <55 56 57>; // M, COMMA & DOT
-        bindings = <&kp MINUS &kp MINUS>;
-      };
-      combo_minus {
-        timeout-ms = <70>;
-        key-positions = <56 57>; // COMMA & DOT
-        // NOTE: Binding the combo's hold behavior to trigger the same modifiers
-        // as the home row mods for these key positions is the best ZMK allows
-        // right now to mimic a tap-only QMK-type combo.
-        // If you fill home row positions with more combos, it might be better
-        // or easier to train yourself to roll onto the combos 1 at a time to
-        // form the multi-modifier hold without triggering the combo.
-        bindings = <&ht RS(RALT) MINUS>;
-      };
+      #include "combos.dtsi"
     };
 
   keymap {
