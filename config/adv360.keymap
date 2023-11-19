@@ -84,11 +84,11 @@
 
     lower {
       bindings = <
-        &trans  &trans    &trans     &trans     &trans     &trans    &trans                                    &trans  &trans    &trans     &trans    &trans    &trans     &trans
-        &trans  &trans    &trans     &kp LT     &kp GT     &trans    &trans                                    &trans  &trans    &trans     &kp LBKT  &kp RBKT  &trans     &trans
-        &trans  &kp EXCL  &kp MINUS  &kp PLUS   &kp EQUAL  &kp HASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans
-        &trans  &kp BSLH  &kp SLASH  &kp ASTRK  &kp CARET  &kp AT                    &trans    &trans                  &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans
-        &trans  &trans    &trans     &trans     &trans               &trans  &trans  &trans    &trans  &trans  &trans            &trans     &trans    &trans    &trans     &trans
+        &trans  &trans    &trans           &trans     &trans           &trans    &trans                                    &trans  &trans    &trans     &trans    &trans    &trans     &trans
+        &trans  &trans    &trans           &kp LT     &kp GT           &trans    &trans                                    &trans  &trans    &trans     &kp LBKT  &kp RBKT  &trans     &trans
+        &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans    &trans  &trans  &trans  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans
+        &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT                    &trans    &trans                  &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans
+        &trans  &trans    &trans           &trans     &trans                     &trans  &trans  &trans    &trans  &trans  &trans            &trans     &trans    &trans    &trans     &trans
       >;
     };
 

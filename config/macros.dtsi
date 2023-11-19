@@ -2,3 +2,18 @@
 // https://zmk.dev/docs/behaviors/macros
 // https://zmk.dev/docs/config/behaviors#macro
 
+
+// no_lshft is my workaround for a current issue with ZMK:
+// Rolled keypresses from a shifted key to a non-shifted key do not release the
+// shift modifier before the non-shifted key is pressed, causing the host OS to
+// register the non-shifted key as a shifted key.
+// A related issue was addressed here, but doesn't fix my particular issue:
+// https://github.com/zmkfirmware/zmk/pull/1828
+no_lshft: no_lshft {
+  compatible = "zmk,behavior-macro-one-param";
+  label = "no_lshft";
+  #binding-cells = <1>;
+  bindings
+    = <&macro_release &kp LSHFT>
+    , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
+};
