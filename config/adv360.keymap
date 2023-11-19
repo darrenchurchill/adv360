@@ -4,6 +4,8 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+// RGB Underglow command for the current battery level on each side
+#define BAT_LVL &rgb_ug RGB_MEFS_CMD 5
 
 // Key Position definitions
 #define KEYS_L   0  1  2  3  4  5  6 \
@@ -102,11 +104,11 @@
 
     mod {
       bindings = <
-        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans                 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &sys_reset   &none        &none                                                                     &none                  &none        &sys_reset   &none        &none &none &none
-        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      &rgb_ug RGB_MEFS_CMD 5 &none        &none        &none        &none &none &none
-        &none &none        &none        &none        &macro_ver   &bootloader                                      &none &none                                                  &bootloader  &none        &none        &none &none &none
-        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                                     &bl BL_INC   &bl BL_DEC   &none &none &none
+        &none &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &none                                                                     &trans   &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &sys_reset   &none        &none                                                                     &none    &none        &sys_reset   &none        &none &none &none
+        &none &none        &none        &none        &none        &none        &none                   &none &none &bt BT_CLR &none                      BAT_LVL  &none        &none        &none        &none &none &none
+        &none &none        &none        &none        &macro_ver   &bootloader                                      &none &none                                    &bootloader  &none        &none        &none &none &none
+        &none &none        &none        &none        &none                                       &none &none &none &none      &bl BL_TOG &rgb_ug RGB_TOG                       &bl BL_INC   &bl BL_DEC   &none &none &none
       >;
     };
   };
