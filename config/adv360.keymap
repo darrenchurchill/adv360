@@ -67,7 +67,7 @@
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
-          hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
+          hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
           hold-trigger-on-release;
       };
 
@@ -79,7 +79,7 @@
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
-          hold-trigger-key-positions = <KEYS_R THUMBS_RIGHT>;
+          hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
           hold-trigger-on-release;
       };
 
@@ -91,7 +91,7 @@
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&kp>, <&kp>;
-          hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
+          hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
           hold-trigger-on-release;
       };
 
@@ -103,7 +103,7 @@
           quick_tap_ms = <175>;
           flavor = "balanced";
           bindings = <&mo>, <&kp>;
-          hold-trigger-key-positions = <KEYS_L THUMBS_LEFT>;
+          hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
           hold-trigger-on-release;
       };
     };
