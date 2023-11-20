@@ -65,3 +65,13 @@ rh_lt: rh_layer_tap {
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
 };
+
+rt_lt: rt_layer_tap {
+  compatible = "zmk,behavior-hold-tap";
+  label = "RIGHT_THUMB_LAYER_TAP";
+  #binding-cells = <2>;
+  tapping-term-ms = <DEFAULT_TAPPING_TERM_MS>;
+  quick_tap_ms = <QUICK_TAP_MS>;
+  flavor = "balanced";
+  bindings = <&mo>, <&kp>;
+};
