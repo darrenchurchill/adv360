@@ -41,7 +41,7 @@ combo_enter {
 combo_db_underscore {
   timeout-ms = <70>;
   key-positions = <RH24 RH23 RH22>; // J, K & L
-  bindings = <&kp UNDERSCORE &kp UNDERSCORE>;
+  bindings = <&m_db_underscore>;
 };
 combo_underscore {
   timeout-ms = <70>;
@@ -51,7 +51,7 @@ combo_underscore {
 combo_db_minus {
   timeout-ms = <70>;
   key-positions = <RH34 RH33 RH32>; // M, COMMA & DOT
-  bindings = <&kp MINUS &kp MINUS>;
+  bindings = <&m_db_minus>;
 };
 combo_minus {
   timeout-ms = <70>;
