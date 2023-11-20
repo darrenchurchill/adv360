@@ -1,0 +1,123 @@
+// Key Position Definitions
+#pragma once
+
+// Left Hand
+// Numbered Top to Bottom, Left to Right (Outside to Inside)
+// Row 1
+#define LH00 0
+#define LH01 1
+#define LH02 2
+#define LH03 3
+#define LH04 4
+#define LH05 5
+#define LH06 6
+// Row 2
+#define LH10 14
+#define LH11 15
+#define LH12 16
+#define LH13 17
+#define LH14 18
+#define LH15 19
+#define LH16 20
+// Row 3
+#define LH20 28
+#define LH21 29
+#define LH22 30
+#define LH23 31
+#define LH24 32
+#define LH25 33
+#define LH26 34
+// Row 4
+#define LH30 46
+#define LH31 47
+#define LH32 48
+#define LH33 49
+#define LH34 50
+#define LH35 51
+// Row 5
+#define LH40 60
+#define LH41 61
+#define LH42 62
+#define LH43 63
+#define LH44 64
+// Thumbs
+// Row 1
+#define LT00 35
+#define LT01 36
+// Row 2
+#define LT10 52
+// Row 3
+#define LT20 65
+#define LT21 66
+#define LT22 67
+
+// Right Hand
+// Numbered Top to Bottom, Right to Left (Outside to Inside)
+// Row 1
+#define RH00 13
+#define RH01 12
+#define RH02 11
+#define RH03 10
+#define RH04 9
+#define RH05 8
+#define RH06 7
+// Row 2
+#define RH10 27
+#define RH11 26
+#define RH12 25
+#define RH13 24
+#define RH14 23
+#define RH15 22
+#define RH16 21
+// Row 3
+#define RH20 45
+#define RH21 44
+#define RH22 43
+#define RH23 42
+#define RH24 41
+#define RH25 40
+#define RH26 39
+// Row 4
+#define RH30 59
+#define RH31 58
+#define RH32 57
+#define RH33 56
+#define RH34 55
+#define RH35 54
+// Row 5
+#define RH40 75
+#define RH41 74
+#define RH42 73
+#define RH43 72
+#define RH44 71
+// Thumbs
+// Row 1
+#define RT00 38
+#define RT01 37
+// Row 2
+#define RT10 53
+// Row 3
+#define RT20 70
+#define RT21 69
+#define RT22 68
+
+// Grouped Definitions
+#define KEYS_L  LH00 LH01 LH02 LH03 LH04 LH05 LH06 \
+                LH10 LH11 LH12 LH13 LH14 LH15 LH16 \
+                LH20 LH21 LH22 LH23 LH24 LH25 LH26 \
+                LH30 LH31 LH32 LH33 LH34 LH35      \
+                LH40 LH41 LH42 LH43 LH44
+
+#define THUMBS_LEFT       LT00 LT01 \
+                               LT10 \
+                     LT20 LT21 LT22
+
+#define KEYS_R  RH06 RH05 RH04 RH03 RH02 RH01 RH00 \
+                RH16 RH15 RH14 RH13 RH12 RH11 RH10 \
+                RH26 RH25 RH24 RH23 RH22 RH21 RH20 \
+                     RH35 RH34 RH33 RH32 RH31 RH30 \
+                          RH44 RH43 RH42 RH41 RH40
+
+#define THUMBS_RIGHT       RT01 RT00 \
+                                RT10 \
+                      RT22 RT21 RT20

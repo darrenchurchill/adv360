@@ -2,6 +2,7 @@
 // https://zmk.dev/docs/behaviors/hold-tap
 // https://zmk.dev/docs/config/behaviors#hold-tap
 
+#include "key_positions.dtsi"
 
 ht: hold_tap {
   compatible = "zmk,behavior-hold-tap";
