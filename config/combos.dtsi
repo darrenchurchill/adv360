@@ -12,7 +12,10 @@ combo_caps_word {
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
 };
+
 // Left Hand
+// Horizontal Combos
+// Home Row
 combo_esc {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 LH24>; // D & F
@@ -23,13 +26,36 @@ combo_slash {
   key-positions = <LH24 LH25>; // F & G
   bindings = <&kp SLASH>;
 };
+// Bottom Row
 combo_grave {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH33 LH34>; // C & V
   bindings = <&kp GRAVE>;
 };
 
+// Vertical Combos
+// Top + Home Rows
+combo_larrow {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH13 LH23>; // E & D
+  bindings = <&m_larrow>;
+};
+combo_lt_equal {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH14 LH24>; // R & F
+  bindings = <&m_lt_equal>;
+};
+// Home + Bottom Rows
+combo_gt_equal {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH24 LH34>; // F & V
+  bindings = <&m_gt_equal>;
+};
+
+
 // Right Hand
+// Horizontal Combos
+// Home Row
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH25 RH24>; // H & J
@@ -50,6 +76,7 @@ combo_underscore {
   key-positions = <RH23 RH22>; // K & L
   bindings = <&kp UNDERSCORE>;
 };
+// Bottom Row
 combo_db_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH34 RH33 RH32>; // M, COMMA & DOT
@@ -65,4 +92,29 @@ combo_minus {
   // or easier to train yourself to roll onto the combos 1 at a time to
   // form the multi-modifier hold without triggering the combo.
   bindings = <&ht RS(RALT) MINUS>;
+};
+
+// Vertical Combos
+// Top + Home Rows
+combo_db_rarrow {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH14 RH24>; // U & J
+  bindings = <&m_db_rarrow>;
+};
+combo_rarrow {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH13 RH23>; // I & K
+  bindings = <&m_rarrow>;
+};
+// Home + Bottom Rows
+combo_caret {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH24 RH34>; // J & M
+  bindings = <&kp CARET>;
+};
+combo_dollar {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  // key-positions = <RH23 RH33>; // K & COMMA
+  key-positions = <42 56>; // K & COMMA
+  bindings = <&kp DOLLAR>;
 };
