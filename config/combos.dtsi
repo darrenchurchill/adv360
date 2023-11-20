@@ -4,57 +4,59 @@
 
 #include "key_positions.dtsi"
 
+#define COMBO_TIMEOUT_MS 70
+
 // Both Hands
 combo_caps_word {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
 };
 // Left Hand
 combo_esc {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 LH24>; // D & F
   bindings = <&kp ESC>;
 };
 combo_slash {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH24 LH25>; // F & G
   bindings = <&kp SLASH>;
 };
 combo_grave {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH33 LH34>; // C & V
   bindings = <&kp GRAVE>;
 };
 
 // Right Hand
 combo_question {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH25 RH24>; // H & J
   bindings = <&kp QUESTION>;
 };
 combo_enter {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH24 RH23>; // J & K
   bindings = <&kp ENTER>;
 };
 combo_db_underscore {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH24 RH23 RH22>; // J, K & L
   bindings = <&m_db_underscore>;
 };
 combo_underscore {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH23 RH22>; // K & L
   bindings = <&kp UNDERSCORE>;
 };
 combo_db_minus {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH34 RH33 RH32>; // M, COMMA & DOT
   bindings = <&m_db_minus>;
 };
 combo_minus {
-  timeout-ms = <70>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH33 RH32>; // COMMA & DOT
   // NOTE: Binding the combo's hold behavior to trigger the same modifiers
   // as the home row mods for these key positions is the best ZMK allows
