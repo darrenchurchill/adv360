@@ -4,9 +4,9 @@
 
 #include "key_positions.dtsi"
 
-ht: hold_tap {
+combo_ht: combo_hold_tap {
   compatible = "zmk,behavior-hold-tap";
-  label = "HOLD_TAP";
+  label = "COMBO_HOLD_TAP";
   #binding-cells = <2>;
   tapping-term-ms = <300>;
   quick_tap_ms = <175>;

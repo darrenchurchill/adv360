@@ -91,7 +91,7 @@ combo_minus {
   // If you fill home row positions with more combos, it might be better
   // or easier to train yourself to roll onto the combos 1 at a time to
   // form the multi-modifier hold without triggering the combo.
-  bindings = <&ht RS(RALT) MINUS>;
+  bindings = <&combo_ht RS(RALT) MINUS>;
 };
 
 // Vertical Combos
