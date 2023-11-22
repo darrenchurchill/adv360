@@ -22,6 +22,12 @@ combo_to_zmk_layer {
 // Left Hand
 // Horizontal Combos
 // Home Row
+combo_esc_layer {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH23 LH24>; // D & F
+  bindings = <&to _QWERTY>;
+  layers = <_ZMK>;
+};
 combo_esc {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 LH24>; // D & F
