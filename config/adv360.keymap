@@ -48,7 +48,7 @@
 
     qwerty {
       bindings = <
-        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9           &kp N0           &kp N5  &tog _LOWER                          /* RH */                              &mo _MOD             &kp N6  &kp N1         &kp N2              &kp N3           &kp N4              &kp MINUS
+        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9           &kp N0           &kp N5  &tog _LOWER                          /* RH */                              &mo _ZMK             &kp N6  &kp N1         &kp N2              &kp N3           &kp N4              &kp MINUS
         /* LH */ &kp TAB     &kp Q           &kp W            &kp E            &lh_lt _RAISE R  &kp T   &none                                /* RH */                              &none                &kp Y   &kp U          &kp I               &kp O            &kp P               &kp BSLH
         /* LH */ &kp ESC     &lh_hm LCTRL A  &lh_lt _LOWER S  &lh_hm LSHFT D   &lh_hm LGUI F    &kp G   &none       &mt LCTRL DQT  &kp LALT  /* RH */  &kp LGUI   &mt RCTRL UNDER  &none                &kp H   &rh_hm RGUI J  &rh_hm RSHFT K      &rh_lt _LOWER L  &rh_hm RCTRL SEMI   &kp SQT
         /* LH */ &kp LSHFT   &lh_hm LCTRL Z  &lh_hm LALT X    &lh_hm LSHFT C   &kp V            &kp B                              &kp HOME  /* RH */  &kp PG_UP                                        &kp N   &kp M          &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RCTRL SLASH  &kp RSHFT
@@ -76,7 +76,7 @@
       >;
     };
 
-    mod {
+    zmk {
       bindings = <
         /* LH */ &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                /* RH */                          &trans           &none     &none       &none        &none  &none        &none
         /* LH */ &none  &bootloader   &none         &none         &sys_reset    &none         &none                /* RH */                          &none            &none     &sys_reset  &none        &none  &bootloader  &none

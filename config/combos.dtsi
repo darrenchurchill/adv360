@@ -3,6 +3,7 @@
 // https://zmk.dev/docs/config/combos
 
 #include "key_positions.dtsi"
+#include "layers.dtsi"
 
 #define COMBO_TIMEOUT_MS 70
 
@@ -11,6 +12,11 @@ combo_caps_word {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
+};
+combo_to_zmk_layer {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH31 RH34 RH23>; // Z, M, & K
+  bindings = <&to _ZMK>;
 };
 
 // Left Hand
