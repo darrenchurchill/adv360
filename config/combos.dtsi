@@ -21,6 +21,12 @@ combo_to_zmk_layer {
 
 // Left Hand
 // Horizontal Combos
+// Top Row
+combo_lh_delete {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH14 LH15>; // R & T
+  bindings = <&kp DELETE>;
+};
 // Home Row
 combo_esc_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
@@ -57,6 +63,11 @@ combo_lt_equal {
   key-positions = <LH14 LH24>; // R & F
   bindings = <&m_lt_equal>;
 };
+combo_lh_backspace {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH15 LH25>; // T & G
+  bindings = <&kp BACKSPACE>;
+};
 // Home + Bottom Rows
 combo_gt_equal {
   timeout-ms = <COMBO_TIMEOUT_MS>;
@@ -67,6 +78,12 @@ combo_gt_equal {
 
 // Right Hand
 // Horizontal Combos
+// Top Row
+combo_rh_delete {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH15 RH14>; // Y & U
+  bindings = <&kp DELETE>;
+};
 // Home Row
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
@@ -108,6 +125,11 @@ combo_minus {
 
 // Vertical Combos
 // Top + Home Rows
+combo_rh_backspace {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH15 RH25>; // Y & H
+  bindings = <&kp BACKSPACE>;
+};
 combo_db_rarrow {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH14 RH24>; // U & J
