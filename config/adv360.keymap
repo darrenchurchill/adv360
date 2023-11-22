@@ -4,15 +4,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/backlight.h>
 
+#include "layers.dtsi"
+
+
 // RGB Underglow command for the current battery level on each side
 #define BAT_LVL &rgb_ug RGB_MEFS_CMD 5
-
-// Layer definitions
-#define _QWERTY  0
-#define _LOWER   1
-#define _RAISE   2
-// TODO: rename _MOD
-#define _MOD     3
 
 
 // Built-in Behavior tweaks
