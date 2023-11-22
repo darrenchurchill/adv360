@@ -78,11 +78,11 @@
 
     zmk {
       bindings = <
-        /* LH */ &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none                /* RH */                          &trans           &none     &none       &none        &none  &none        &none
-        /* LH */ &none  &bootloader   &none         &none         &sys_reset    &none         &none                /* RH */                          &none            &none     &sys_reset  &none        &none  &bootloader  &none
-        /* LH */ &none  &none         &none         &none         &none         &none         &none  &none  &none  /* RH */  &bt BT_CLR  &none       &none            &none     &none       &none        &none  &none        &none
-        /* LH */ &none  &none         &none         &none         &macro_ver    BAT_LVL                     &none  /* RH */  &none                                    BAT_LVL   &none       &none        &none  &none        &none
-        /* LH */ &none  &none         &none         &none         &none                       &none  &none  &none  /* RH */  &none       &bl BL_TOG  &rgb_ug RGB_TOG            &bl BL_INC  &bl BL_DEC   &none  &none        &none
+        /* LH */ &none  &none        &none  &none       &bt BT_SEL 0  &none       &none                /* RH */                &none   &none    &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+        /* LH */ &none  &bootloader  &none  &none       &sys_reset    &bl BL_TOG  &none                /* RH */                &none   &none    &sys_reset       &none         &none         &bootloader   &none
+        /* LH */ &none  &none        &none  &none       &none         &none       &none  &none  &none  /* RH */  &none  &none  &none   &none    &bl BL_DEC       &bl BL_INC    &none         &none         &none
+        /* LH */ &none  &none        &none  &bt BT_CLR  &macro_ver    BAT_LVL                   &none  /* RH */  &none                 &none    &rgb_ug RGB_TOG  &none         &none         &none         &none
+        /* LH */ &none  &none        &none  &none       &none                     &none  &none  &none  /* RH */  &none  &none  &none            &none            &none         &none         &none         &none
       >;
     };
   };
