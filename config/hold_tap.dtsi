@@ -6,7 +6,7 @@
 
 #define DEFAULT_TAPPING_TERM_MS 200
 #define HOME_MODS_TAPPING_TERM_MS 300
-#define QUICK_TAP_MS 175
+#define QUICK_TAP_MS 200
 
 combo_ht: combo_hold_tap {
   compatible = "zmk,behavior-hold-tap";
