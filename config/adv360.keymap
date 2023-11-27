@@ -16,7 +16,7 @@
   flavor = "balanced";
 };
 &sk {
-  release-after-ms = <500>;
+  release-after-ms = <750>;
   // deactivate sticky key on next key press, instead of next key release
   quick-release;
 };
