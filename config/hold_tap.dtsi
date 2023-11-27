@@ -13,7 +13,7 @@ combo_ht: combo_hold_tap {
   label = "COMBO_HOLD_TAP";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&kp>, <&kp>;
 };
@@ -23,7 +23,7 @@ lh_hm: lh_homerow_mods {
   label = "LEFT_HAND_HOMEROW_MODS";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
@@ -35,7 +35,7 @@ lh_lt: lh_layer_tap {
   label = "LEFT_HAND_LAYER_TAP";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&mo>, <&kp>;
   hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
@@ -47,7 +47,7 @@ rh_hm: rh_homerow_mods {
   label = "RIGHT_HAND_HOMEROW_MODS";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
@@ -59,7 +59,7 @@ rh_lt: rh_layer_tap {
   label = "RIGHT_HAND_LAYER_TAP";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&mo>, <&kp>;
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
@@ -71,7 +71,7 @@ rt_lt: rt_layer_tap {
   label = "RIGHT_THUMB_LAYER_TAP";
   #binding-cells = <2>;
   tapping-term-ms = <DEFAULT_TAPPING_TERM_MS>;
-  quick_tap_ms = <QUICK_TAP_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&mo>, <&kp>;
 };
