@@ -2,6 +2,7 @@
 // https://zmk.dev/docs/behaviors/macros
 // https://zmk.dev/docs/config/behaviors#macro
 
+#pragma once
 
 // NOTE:
 // Macros that send a sequence of keycodes to the connected host are recommended
@@ -25,6 +26,14 @@ no_lshft: no_lshft {
   bindings
     = <&macro_release &kp LSHFT>
     , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
+};
+dot_space_sticky_shift: dot_space_sticky_shift {
+  compatible = "zmk,behavior-macro";
+  label = "dot_space_sticky_shift";
+  #binding-cells = <0>;
+  wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  bindings = <&kp DOT> , <&kp SPACE> , <&sk LSHIFT>;
 };
 
 
