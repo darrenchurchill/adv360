@@ -105,6 +105,7 @@ combo_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH23 RH22>; // K & L
   bindings = <&kp UNDERSCORE>;
+  layers  = <_QWERTY _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
 combo_db_minus {
@@ -122,6 +123,7 @@ combo_minus {
   // or easier to train yourself to roll onto the combos 1 at a time to
   // form the multi-modifier hold without triggering the combo.
   bindings = <&combo_ht RS(RALT) MINUS>;
+  layers  = <_QWERTY _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast {} rolls
 };
 
 // Vertical Combos
