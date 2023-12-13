@@ -7,6 +7,7 @@
 #define DEFAULT_TAPPING_TERM_MS 200
 #define HOME_MODS_TAPPING_TERM_MS 300
 #define QUICK_TAP_MS 200
+#define HOMEROW_MODS_FLAVOR "balanced"
 
 combo_ht: combo_hold_tap {
   compatible = "zmk,behavior-hold-tap";
@@ -34,7 +35,7 @@ lh_hm: lh_homerow_mods {
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
-  flavor = "balanced";
+  flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
@@ -46,7 +47,7 @@ lh_lt: lh_layer_tap {
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
-  flavor = "balanced";
+  flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&mo>, <&kp>;
   hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
@@ -58,7 +59,7 @@ rh_hm: rh_homerow_mods {
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
-  flavor = "balanced";
+  flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
@@ -70,7 +71,7 @@ rh_lt: rh_layer_tap {
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
-  flavor = "balanced";
+  flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&mo>, <&kp>;
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
