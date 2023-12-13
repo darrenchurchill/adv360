@@ -29,6 +29,16 @@ combo_lh_delete {
   bindings = <&kp DELETE>;
 };
 // Home Row
+combo_lh_meh {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH21 LH22 LH23>; // A, S, & D
+  bindings = <&sk LC(LS(LALT))>;
+};
+combo_lh_hyper {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH21 LH22 LH23 LH24>; // A, S, D, & F
+  bindings = <&sk LC(LS(LA(LGUI)))>;
+};
 combo_esc_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 LH24>; // D & F
@@ -86,6 +96,16 @@ combo_rh_delete {
   bindings = <&kp DELETE>;
 };
 // Home Row
+combo_rh_meh {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH21 RH22 RH23>; // K, L, & SEMI
+  bindings = <&sk LC(LS(LALT))>;
+};
+combo_rh_hyper {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH21 RH22 RH23 RH24>; // J, K, L, & SEMI
+  bindings = <&sk LC(LS(LA(LGUI)))>;
+};
 combo_slash {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH25 RH24>; // H & J
