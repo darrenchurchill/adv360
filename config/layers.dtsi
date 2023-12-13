@@ -5,4 +5,5 @@
 #define _QWERTY  0
 #define _LOWER   1
 #define _RAISE   2
-#define _ZMK     3
+#define _EXTEND  3
+#define _ZMK     4
