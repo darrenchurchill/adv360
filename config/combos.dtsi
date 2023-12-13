@@ -14,11 +14,6 @@ combo_caps_word {
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
 };
-combo_end_sentence {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LT20 RT20>; // Left thumb and right thumb
-  bindings = <&dot_space_sticky_shift>;
-};
 combo_to_zmk_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH31 RH34 RH23>; // Z, M, & K

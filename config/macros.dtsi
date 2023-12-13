@@ -27,14 +27,6 @@ no_lshft: no_lshft {
     = <&macro_release &kp LSHFT>
     , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
 };
-dot_space_sticky_shift: dot_space_sticky_shift {
-  compatible = "zmk,behavior-macro";
-  label = "dot_space_sticky_shift";
-  #binding-cells = <0>;
-  wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
-  tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
-  bindings = <&kp DOT> , <&kp SPACE> , <&sk LSHIFT>;
-};
 
 
 // Symbol Macros
