@@ -45,10 +45,11 @@ combo_esc_layer {
   bindings = <&to _QWERTY>;
   layers = <_ZMK>;
 };
-combo_esc {
+combo_lt_raise_esc {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 LH24>; // D & F
-  bindings = <&kp ESC>;
+  slow-release;
+  bindings = <&combo_lt _RAISE ESC>;
 };
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
