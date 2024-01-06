@@ -11,7 +11,7 @@
 
 // Both Hands
 combo_caps_word {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
 };
