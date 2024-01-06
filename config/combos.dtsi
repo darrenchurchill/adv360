@@ -20,6 +20,11 @@ combo_tog_zmk_layer {
   key-positions = <LH31 RH34 RH23>; // Z, M, & K
   bindings = <&tog _ZMK>;
 };
+combo_toggle_qwerty {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH40 RH40>; // Bottom Left & Bottom Right Keys
+  bindings = <&tog _QWERTY>;
+};
 
 // Left Hand
 // Horizontal Combos
@@ -122,7 +127,7 @@ combo_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH23 RH22>; // K & L
   bindings = <&kp UNDERSCORE>;
-  layers  = <_QWERTY _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
+  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
 combo_enter {
@@ -145,7 +150,7 @@ combo_minus {
   // or easier to train yourself to roll onto the combos 1 at a time to
   // form the multi-modifier hold without triggering the combo.
   bindings = <&combo_ht RS(RALT) MINUS>;
-  layers  = <_QWERTY _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast {} rolls
+  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast {} rolls
 };
 
 // Vertical Combos

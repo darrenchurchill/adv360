@@ -47,6 +47,16 @@
   keymap {
     compatible = "zmk,keymap";
 
+    colemak {
+      bindings = <
+        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5  &tog _LOWER                           /* RH */                                   &mo _ZMK  &kp N6  &kp N1          &kp N2              &kp N3           &kp N4             &kp MINUS
+        /* LH */ &kp TAB     &kp Q           &kp W            &lh_lt _EXTEND F  &lh_lt _RAISE P  &kp B   &none                                 /* RH */                                   &none     &kp J   &kp L           &kp U               &kp Y            &kp SEMI           &kp BSLH
+        /* LH */ &kp ESC     &lh_hm LCTRL A  &lh_lt _LOWER R  &lh_hm LSHFT S    &lh_hm LGUI T    &kp G   &none        &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT         &none     &kp M   &rh_hm RGUI N   &rh_hm RSHFT E      &rh_lt _LOWER I  &rh_hm RCTRL O     &kp SQT
+        /* LH */ &kp LSHFT   &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL D   &kp V                              &kp HOME   /* RH */  &kp PG_UP                                  &kp K   &rh_hm RCTRL H  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp RSHFT
+        /* LH */ &mo _LOWER  &kp GRAVE       &sk LSHFT        &kp LEFT          &kp RIGHT                &key_repeat  &sk LSHFT     &kp TAB    /* RH */  &kp TAB     &rt_lt _RAISE SPACE  &kp BSPC          &kp DOWN        &kp UP              &sk RSHFT        &none              &mo _LOWER
+      >;
+    };
+
     // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
     // TODO: Decide what to do about the now missing PG_DN, and END keypress behaviors
     qwerty {

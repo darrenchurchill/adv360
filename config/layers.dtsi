@@ -2,8 +2,9 @@
 // https://zmk.dev/docs/behaviors/layers
 #pragma once
 
-#define _QWERTY  0
-#define _LOWER   1
-#define _RAISE   2
-#define _EXTEND  3
-#define _ZMK     4
+#define _COLEMAK  0
+#define _QWERTY   1
+#define _LOWER    2
+#define _RAISE    3
+#define _EXTEND   4
+#define _ZMK      5
