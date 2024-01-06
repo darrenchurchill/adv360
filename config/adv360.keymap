@@ -102,11 +102,11 @@
 
   // template {
   //   bindings = <
-  //     &trans  &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  //     &trans  &trans  &trans  &trans  &trans  &trans  &trans                                    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  //     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-  //     &trans  &trans  &trans  &trans  &trans  &trans                  &trans    &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-  //     &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans    &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+  //     /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  //     /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  //     /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+  //     /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  /* RH */  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+  //     /* LH */ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  /* RH */  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
   //   >;
   // };
 };
