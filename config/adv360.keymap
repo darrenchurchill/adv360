@@ -48,14 +48,14 @@
     compatible = "zmk,keymap";
 
     // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
-    // TODO: Decide what to do about the now missing PG_DN keypress behavior
+    // TODO: Decide what to do about the now missing PG_DN, and END keypress behaviors
     qwerty {
       bindings = <
-        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5  &tog _LOWER                           /* RH */                                    &mo _ZMK  &kp N6  &kp N1          &kp N2              &kp N3           &kp N4             &kp MINUS
-        /* LH */ &kp TAB     &kp Q           &kp W            &lh_lt _EXTEND E  &lh_lt _RAISE R  &kp T   &none                                 /* RH */                                    &none     &kp Y   &kp U           &kp I               &kp O            &kp P              &kp BSLH
-        /* LH */ &kp ESC     &lh_hm LCTRL A  &lh_lt _LOWER S  &lh_hm LSHFT D    &lh_hm LGUI F    &kp G   &none        &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL    &mt LGUI SQT         &none     &kp H   &rh_hm RGUI J   &rh_hm RSHFT K      &rh_lt _LOWER L  &rh_hm RCTRL SEMI  &kp SQT
-        /* LH */ &kp LSHFT   &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL V   &kp B                              &kp HOME   /* RH */  &kp PG_UP                                   &kp N   &rh_hm RCTRL M  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp RSHFT
-        /* LH */ &mo _LOWER  &kp GRAVE       &sk LSHFT        &kp LEFT          &kp RIGHT                &kp TAB      &sk LSHFT     &kp END    /* RH */  &key_repeat  &rt_lt _RAISE SPACE  &kp BSPC          &kp DOWN        &kp UP              &sk RSHFT        &none              &mo _LOWER
+        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5  &tog _LOWER                           /* RH */                                   &mo _ZMK  &kp N6  &kp N1          &kp N2              &kp N3           &kp N4             &kp MINUS
+        /* LH */ &kp TAB     &kp Q           &kp W            &lh_lt _EXTEND E  &lh_lt _RAISE R  &kp T   &none                                 /* RH */                                   &none     &kp Y   &kp U           &kp I               &kp O            &kp P              &kp BSLH
+        /* LH */ &kp ESC     &lh_hm LCTRL A  &lh_lt _LOWER S  &lh_hm LSHFT D    &lh_hm LGUI F    &kp G   &none        &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT         &none     &kp H   &rh_hm RGUI J   &rh_hm RSHFT K      &rh_lt _LOWER L  &rh_hm RCTRL SEMI  &kp SQT
+        /* LH */ &kp LSHFT   &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL V   &kp B                              &kp HOME   /* RH */  &kp PG_UP                                  &kp N   &rh_hm RCTRL M  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp RSHFT
+        /* LH */ &to _LOWER  &kp GRAVE       &sk LSHFT        &kp LEFT          &kp RIGHT                &key_repeat  &sk LSHFT     &kp TAB    /* RH */  &kp TAB     &rt_lt _RAISE SPACE  &kp BSPC          &kp DOWN        &kp UP              &sk RSHFT        &none              &mo _LOWER
       >;
     };
 
