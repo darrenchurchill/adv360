@@ -14,10 +14,10 @@ combo_caps_word {
   key-positions = <LH23 RH23>; // D & K
   bindings = <&caps_word>;
 };
-combo_to_zmk_layer {
+combo_tog_zmk_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH31 RH34 RH23>; // Z, M, & K
-  bindings = <&to _ZMK>;
+  bindings = <&tog _ZMK>;
 };
 
 // Left Hand
