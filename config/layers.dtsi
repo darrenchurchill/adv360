@@ -8,4 +8,5 @@
 #define _RAISE    3
 #define _EXTEND   4
 #define _ARROWS   5
-#define _ZMK      6
+#define _NUMPAD   6
+#define _ZMK      7
