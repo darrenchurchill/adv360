@@ -59,6 +59,13 @@ combo_question {
   bindings = <&kp QUESTION>;
 };
 // Bottom Row
+combo_triple_grave {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH32 LH33 LH34>; // X, C, & D (X, C, & V)
+  // https://zmk.dev/docs/behaviors/hold-tap#using-different-behavior-types-with-hold-taps
+  // You need a dummy parameter here, see link above.
+  bindings = <&combo_ht_m_trp_grave RA(RS(RCTRL)) 0>;
+};
 combo_grave {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH33 LH34>; // C & D (C & V)

@@ -29,6 +29,13 @@ no_lshft: no_lshft {
 
 
 // Symbol Macros
+m_trp_grave: m_trp_grave {
+  compatible = "zmk,behavior-macro";
+  #binding-cells = <0>;
+  wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  bindings = <&kp GRAVE>, <&kp GRAVE>, <&kp GRAVE>;
+};
 m_db_minus: m_db_minus {
   compatible = "zmk,behavior-macro";
   #binding-cells = <0>;
