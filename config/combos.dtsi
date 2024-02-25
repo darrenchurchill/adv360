@@ -178,7 +178,6 @@ combo_caret {
 };
 combo_dollar {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  // key-positions = <RH23 RH33>; // K & COMMA
-  key-positions = <42 56>; // K & COMMA
+  key-positions = <RH23 RH33>; // K & COMMA
   bindings = <&kp DOLLAR>;
 };
