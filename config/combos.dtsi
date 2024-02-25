@@ -12,12 +12,12 @@
 // Both Hands
 combo_caps_word {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-  key-positions = <LH23 RH23>; // D & K
+  key-positions = <LH23 RH23>; // S & E (D & K)
   bindings = <&caps_word>;
 };
 combo_tog_zmk_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH31 RH34 RH23>; // Z, M, & K
+  key-positions = <LH31 RH34 RH23>; // Z, M, & K (Z, H, & E)
   bindings = <&tog _ZMK>;
 };
 combo_toggle_qwerty {
@@ -31,41 +31,41 @@ combo_toggle_qwerty {
 // Top Row
 combo_lh_delete {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH14 LH15>; // R & T
+  key-positions = <LH14 LH15>; // P & B (R & T)
   bindings = <&kp DELETE>;
 };
 // Home Row
 combo_lh_meh {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH21 LH22 LH23>; // A, S, & D
+  key-positions = <LH21 LH22 LH23>; // A, R, & S (A, S, & D)
   bindings = <&sk LC(LS(LALT))>;
 };
 combo_lh_hyper {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH21 LH22 LH23 LH24>; // A, S, D, & F
+  key-positions = <LH21 LH22 LH23 LH24>; // A, R, S, & T (A, S, D, & F)
   bindings = <&sk LC(LS(LA(LGUI)))>;
 };
 combo_esc_zmk_layer {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH23 LH24>; // D & F
+  key-positions = <LH23 LH24>; // S & T (D & F)
   bindings = <&tog _ZMK>;
   layers = <_ZMK>;
 };
 combo_lt_raise_esc {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-  key-positions = <LH23 LH24>; // D & F
+  key-positions = <LH23 LH24>; // S & T (D & F)
   slow-release;
   bindings = <&combo_lt _RAISE ESC>;
 };
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH24 LH25>; // F & G
+  key-positions = <LH24 LH25>; // T & G (F & G)
   bindings = <&kp QUESTION>;
 };
 // Bottom Row
 combo_grave {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH33 LH34>; // C & V
+  key-positions = <LH33 LH34>; // C & D (C & V)
   bindings = <&kp GRAVE>;
 };
 
@@ -73,23 +73,23 @@ combo_grave {
 // Top + Home Rows
 combo_larrow {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH13 LH23>; // E & D
+  key-positions = <LH13 LH23>; // F & S (E & D)
   bindings = <&m_larrow>;
 };
 combo_lt_equal {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH14 LH24>; // R & F
+  key-positions = <LH14 LH24>; // P & T (R & F)
   bindings = <&m_lt_equal>;
 };
 combo_lh_backspace {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH15 LH25>; // T & G
+  key-positions = <LH15 LH25>; // B & G (T & G)
   bindings = <&kp BACKSPACE>;
 };
 // Home + Bottom Rows
 combo_gt_equal {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH24 LH34>; // F & V
+  key-positions = <LH24 LH34>; // T & D (F & V)
   bindings = <&m_gt_equal>;
 };
 
@@ -99,50 +99,50 @@ combo_gt_equal {
 // Top Row
 combo_rh_delete {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH15 RH14>; // Y & U
+  key-positions = <RH15 RH14>; // J & L (Y & U)
   bindings = <&kp DELETE>;
 };
 // Home Row
 combo_rh_meh {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH21 RH22 RH23>; // K, L, & SEMI
+  key-positions = <RH21 RH22 RH23>; // E, I, & O (K, L, & SEMI)
   bindings = <&sk LC(LS(LALT))>;
 };
 combo_rh_hyper {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH21 RH22 RH23 RH24>; // J, K, L, & SEMI
+  key-positions = <RH21 RH22 RH23 RH24>; // N, E, I, & O (J, K, L, & SEMI)
   bindings = <&sk LC(LS(LA(LGUI)))>;
 };
 combo_slash {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH25 RH24>; // H & J
+  key-positions = <RH25 RH24>; // M & N (H & J)
   bindings = <&kp SLASH>;
 };
 combo_enter {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-  key-positions = <RH24 RH23>; // J & K
+  key-positions = <RH24 RH23>; // N & E (J & K)
   bindings = <&kp ENTER>;
 };
 combo_db_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH24 RH23 RH22>; // J, K & L
+  key-positions = <RH24 RH23 RH22>; // N, E, & I (J, K & L)
   bindings = <&m_db_underscore>;
 };
 combo_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH23 RH22>; // K & L
+  key-positions = <RH23 RH22>; // E & I (K & L)
   bindings = <&kp UNDERSCORE>;
   layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
 combo_db_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH34 RH33 RH32>; // M, COMMA & DOT
+  key-positions = <RH34 RH33 RH32>; // H, COMMA, & DOT (M, COMMA & DOT)
   bindings = <&m_db_minus>;
 };
 combo_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH33 RH32>; // COMMA & DOT
+  key-positions = <RH33 RH32>; // COMMA & DOT (COMMA & DOT)
   // NOTE: Binding the combo's hold behavior to trigger the same modifiers
   // as the home row mods for these key positions is the best ZMK allows
   // right now to mimic a tap-only QMK-type combo.
@@ -157,27 +157,27 @@ combo_minus {
 // Top + Home Rows
 combo_rh_backspace {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH15 RH25>; // Y & H
+  key-positions = <RH15 RH25>; // J & M (Y & H)
   bindings = <&kp BACKSPACE>;
 };
 combo_db_rarrow {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH14 RH24>; // U & J
+  key-positions = <RH14 RH24>; // L & N (U & J)
   bindings = <&m_db_rarrow>;
 };
 combo_rarrow {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH13 RH23>; // I & K
+  key-positions = <RH13 RH23>; // U & E (I & K)
   bindings = <&m_rarrow>;
 };
 // Home + Bottom Rows
 combo_caret {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH24 RH34>; // J & M
+  key-positions = <RH24 RH34>; // N & H (J & M)
   bindings = <&kp CARET>;
 };
 combo_dollar {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH23 RH33>; // K & COMMA
+  key-positions = <RH23 RH33>; // E & COMMA (K & COMMA)
   bindings = <&kp DOLLAR>;
 };
