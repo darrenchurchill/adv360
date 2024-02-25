@@ -8,6 +8,7 @@
 
 #define COMBO_TIMEOUT_MS_FAST 20
 #define COMBO_TIMEOUT_MS 70
+#define COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS 200
 
 // Both Hands
 combo_caps_word {
@@ -54,6 +55,7 @@ combo_esc_zmk_layer {
 combo_lt_raise_esc {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 LH24>; // S & T (D & F)
+  require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
   slow-release;
   bindings = <&combo_lt _RAISE ESC>;
 };
@@ -121,6 +123,7 @@ combo_slash {
 combo_enter {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH24 RH23>; // N & E (J & K)
+  require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
   bindings = <&kp ENTER>;
 };
 combo_db_underscore {
