@@ -21,7 +21,6 @@
 // https://github.com/zmkfirmware/zmk/pull/1828
 no_lshft: no_lshft {
   compatible = "zmk,behavior-macro-one-param";
-  label = "no_lshft";
   #binding-cells = <1>;
   bindings
     = <&macro_release &kp LSHFT>
@@ -32,7 +31,6 @@ no_lshft: no_lshft {
 // Symbol Macros
 m_db_minus: m_db_minus {
   compatible = "zmk,behavior-macro";
-  label = "m_db_minus";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -40,7 +38,6 @@ m_db_minus: m_db_minus {
 };
 m_db_underscore: m_db_underscore {
   compatible = "zmk,behavior-macro";
-  label = "m_db_underscore";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -48,7 +45,6 @@ m_db_underscore: m_db_underscore {
 };
 m_larrow: m_larrow {
   compatible = "zmk,behavior-macro";
-  label = "m_larrow";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -56,7 +52,6 @@ m_larrow: m_larrow {
 };
 m_rarrow: m_rarrow {
   compatible = "zmk,behavior-macro";
-  label = "m_rarrow";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -64,7 +59,6 @@ m_rarrow: m_rarrow {
 };
 m_db_rarrow: m_db_rarrow {
   compatible = "zmk,behavior-macro";
-  label = "m_db_rarrow";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -72,7 +66,6 @@ m_db_rarrow: m_db_rarrow {
 };
 m_lt_equal: m_lt_equal {
   compatible = "zmk,behavior-macro";
-  label = "m_lt_equal";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
@@ -80,7 +73,6 @@ m_lt_equal: m_lt_equal {
 };
 m_gt_equal: m_gt_equal {
   compatible = "zmk,behavior-macro";
-  label = "m_gt_equal";
   #binding-cells = <0>;
   wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
   tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
