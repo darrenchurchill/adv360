@@ -52,7 +52,7 @@ combo_esc_zmk_layer {
   layers = <_ZMK>;
 };
 combo_lt_raise_esc {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 LH24>; // D & F
   slow-release;
   bindings = <&combo_lt _RAISE ESC>;
@@ -119,7 +119,7 @@ combo_slash {
   bindings = <&kp SLASH>;
 };
 combo_enter {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH24 RH23>; // J & K
   bindings = <&kp ENTER>;
 };
