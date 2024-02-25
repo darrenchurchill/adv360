@@ -49,11 +49,11 @@
 
     colemak {
       bindings = <
-        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5  &tog _LOWER                           /* RH */                                   &mo _ZMK  &kp N6  &kp N1          &kp N2              &kp N3           &kp N4             &kp BSLH
-        /* LH */ &kp GRAVE   &kp Q           &kp W            &lh_lt _EXTEND F  &lh_lt _RAISE P  &kp B   &none                                 /* RH */                                   &none     &kp J   &kp L           &kp U               &kp Y            &kp SEMI           &kp MINUS
-        /* LH */ &kp TAB     &lh_hm LCTRL A  &lh_lt _LOWER R  &lh_hm LSHFT S    &lh_hm LGUI T    &kp G   &none        &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT         &none     &kp M   &rh_hm RGUI N   &rh_hm RSHFT E      &rh_lt _LOWER I  &rh_hm RCTRL O     &kp SQT
-        /* LH */ &kp BSPC    &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL D   &kp V                              &kp HOME   /* RH */  &kp PG_UP                                  &kp K   &rh_hm RCTRL H  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp DEL
-        /* LH */ &mo _LOWER  &kp PG_UP       &sk PG_DN        &kp LEFT          &kp RIGHT                &key_repeat  &sk LSHFT     &kp TAB    /* RH */  &kp TAB     &rt_lt _RAISE SPACE  &kp BSPC          &kp DOWN        &kp UP              &kp UNDER        &kp MINUS          &mo _LOWER
+        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5  &tog _LOWER                                /* RH */                            &mo _ZMK             &kp N6  &kp N1          &kp N2              &kp N3           &kp N4             &kp BSLH
+        /* LH */ &kp GRAVE   &kp Q           &kp W            &lh_lt _EXTEND F  &lh_lt _RAISE P  &kp B   &none                                      /* RH */                            &none                &kp J   &kp L           &kp U               &kp Y            &kp SEMI           &kp MINUS
+        /* LH */ &kp TAB     &lh_hm LCTRL A  &lh_lt _LOWER R  &lh_hm LSHFT S    &lh_hm LGUI T    &kp G   &none             &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT  &none                &kp M   &rh_hm RGUI N   &rh_hm RSHFT E      &rh_lt _LOWER I  &rh_hm RCTRL O     &kp SQT
+        /* LH */ &kp BSPC    &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL D   &kp V                                   &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rh_hm RCTRL H  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp DEL
+        /* LH */ &mo _LOWER  &kp PG_UP       &sk PG_DN        &kp LEFT          &kp RIGHT                &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB     &kp BSPC      &rt_lt _RAISE SPACE          &kp DOWN        &kp UP              &sk UNDER        &kp MINUS          &mo _LOWER
       >;
     };
 
