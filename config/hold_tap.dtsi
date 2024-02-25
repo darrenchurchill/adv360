@@ -5,6 +5,7 @@
 #include "key_positions.dtsi"
 
 #define DEFAULT_TAPPING_TERM_MS 200
+#define THUMB_TAPPING_TERM_MS 300
 #define HOME_MODS_TAPPING_TERM_MS 300
 #define QUICK_TAP_MS 200
 #define HOMEROW_MODS_FLAVOR "balanced"
@@ -81,7 +82,7 @@ rt_lt: rt_layer_tap {
   compatible = "zmk,behavior-hold-tap";
   label = "RIGHT_THUMB_LAYER_TAP";
   #binding-cells = <2>;
-  tapping-term-ms = <DEFAULT_TAPPING_TERM_MS>;
+  tapping-term-ms = <THUMB_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
   flavor = "balanced";
   bindings = <&mo>, <&kp>;
