@@ -108,6 +108,18 @@
                 LH30 LH31 LH32 LH33 LH34 LH35      \
                 LH40 LH41 LH42 LH43 LH44
 
+// For use with rmt_gui's hold-trigger-key-positions
+// Homerow GUI hold-tap is on the Colemak N position
+// "NR" is a common bigram
+// CMD-R is a common shortcut that is annoying to accidentally trigger in the
+// web browser.
+// Remove Colemak R position
+#define KEYS_L_GUI_SAFE  LH00 LH01 LH02 LH03 LH04 LH05 LH06 \
+                         LH10 LH11 LH12 LH13 LH14 LH15 LH16 \
+                         LH20 LH21      LH23 LH24 LH25 LH26 \
+                         LH30 LH31 LH32 LH33 LH34 LH35      \
+                         LH40 LH41 LH42 LH43 LH44
+
 #define THUMBS_LEFT       LT00 LT01 \
                                LT10 \
                      LT20 LT21 LT22
@@ -118,6 +130,27 @@
                      RH35 RH34 RH33 RH32 RH31 RH30 \
                           RH44 RH43 RH42 RH41 RH40
 
+// For use with lmt_gui's hold-trigger-key-positions
+// Homerow GUI hold-tap is on the Colemak T position
+// "TH" & "TO" are common bigrams
+// CMD-H & CMD-O are common shortcuts that are annoying to accidentally trigger
+// Remove Colemak H, & O positions
+#define KEYS_R_GUI_SAFE  RH06 RH05 RH04 RH03 RH02 RH01 RH00 \
+                         RH16 RH15 RH14 RH13 RH12 RH11 RH10 \
+                         RH26      RH24 RH23 RH22      RH20 \
+                              RH35 RH34 RH33 RH32 RH31 RH30 \
+                                   RH44 RH43 RH42 RH41 RH40
+
 #define THUMBS_RIGHT       RT01 RT00 \
                                 RT10 \
                       RT22 RT21 RT20
+
+// For use with lmt_ctrl's hold-trigger-key-positions
+// Homerow CTRL hold-tap is on the Colemak A position
+// "A" is commonly rolled with "SPACE", which is the Mac shortcut to change
+// keyboard input sources (i.e. QWERTY to Colemak). This is annoying to
+// accidentally trigger.
+// Remove SPACE positions
+#define THUMBS_RIGHT_CTRL_SAFE       RT01 RT00 \
+                                          RT10 \
+                                RT22      RT20

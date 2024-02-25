@@ -39,6 +39,28 @@ lmt: lh_homerow_mod_tap {
   hold-trigger-on-release;
 };
 
+lmt_c: lh_homerow_mod_tap_ctrl {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = HOMEROW_MODS_FLAVOR;
+  bindings = <&kp>, <&kp>;
+  hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT_CTRL_SAFE>;
+  hold-trigger-on-release;
+};
+
+lmt_g: lh_homerow_mod_tap_gui {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = HOMEROW_MODS_FLAVOR;
+  bindings = <&kp>, <&kp>;
+  hold-trigger-key-positions = <KEYS_R_GUI_SAFE THUMBS_LEFT THUMBS_RIGHT>;
+  hold-trigger-on-release;
+};
+
 llt: lh_layer_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
@@ -67,6 +89,17 @@ rmt: rh_homerow_mod_tap {
   flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_L THUMBS_LEFT THUMBS_RIGHT>;
+  hold-trigger-on-release;
+};
+
+rmt_g: rh_homerow_mod_tap_gui {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = HOMEROW_MODS_FLAVOR;
+  bindings = <&kp>, <&kp>;
+  hold-trigger-key-positions = <KEYS_L_GUI_SAFE THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
 };
 
