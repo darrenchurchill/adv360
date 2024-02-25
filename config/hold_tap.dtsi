@@ -28,7 +28,7 @@ combo_lt: combo_layer_tap {
   bindings = <&mo>, <&kp>;
 };
 
-lh_hm: lh_homerow_mods {
+lmt: lh_homerow_mod_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
@@ -39,7 +39,7 @@ lh_hm: lh_homerow_mods {
   hold-trigger-on-release;
 };
 
-lh_lt: lh_layer_tap {
+llt: lh_layer_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
@@ -59,7 +59,7 @@ lt_mt: left_thumb_mod_tap {
   bindings = <&kp>, <&kp>;
 };
 
-rh_hm: rh_homerow_mods {
+rmt: rh_homerow_mod_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
@@ -70,7 +70,7 @@ rh_hm: rh_homerow_mods {
   hold-trigger-on-release;
 };
 
-rh_lt: rh_layer_tap {
+rlt: rh_layer_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
   tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;

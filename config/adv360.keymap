@@ -48,11 +48,11 @@
 
     colemak {
       bindings = <
-        /* LH */ &kp EQUAL   &kp N7          &kp N8           &kp N9            &kp N0           &kp N5            &tog _LOWER                                /* RH */                            &mo _ZMK              &kp N6            &kp N1          &kp N2              &kp N3           &kp N4             &kp BSLH
-        /* LH */ &kp GRAVE   &kp Q           &kp W            &lh_lt _EXTEND F  &lh_lt _RAISE P  &kp B             &none                                      /* RH */                            &none                 &kp J             &kp L           &kp U               &kp Y            &kp SEMI           &kp MINUS
-        /* LH */ &kp TAB     &lh_hm LCTRL A  &lh_lt _LOWER R  &lh_hm LSHFT S    &lh_hm LGUI T    &kp G             &none             &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT  &none                 &kp M             &rh_hm RGUI N   &rh_hm RSHFT E      &rh_lt _LOWER I  &rh_hm RCTRL O     &kp SQT
-        /* LH */ &kp BSPC    &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL D   &lh_lt _NUMPAD V                                  &kp HOME   /* RH */  &kp PG_UP                                       &rh_lt _NUMPAD K  &rh_hm RCTRL H  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &kp DEL
-        /* LH */ &mo _LOWER  &kp PG_UP       &sk PG_DN        &kp LEFT          &kp RIGHT                          &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB     &kp BSPC      &rt_lt _ARROWS SPACE                    &kp DOWN        &kp UP              &sk UNDER        &kp MINUS          &mo _LOWER
+        /* LH */ &kp EQUAL   &kp N7        &kp N8         &kp N9          &kp N0         &kp N5          &tog _LOWER                                /* RH */                            &mo _ZMK              &kp N6          &kp N1        &kp N2            &kp N3         &kp N4           &kp BSLH
+        /* LH */ &kp GRAVE   &kp Q         &kp W          &llt _EXTEND F  &llt _RAISE P  &kp B           &none                                      /* RH */                            &none                 &kp J           &kp L         &kp U             &kp Y          &kp SEMI         &kp MINUS
+        /* LH */ &kp TAB     &lmt LCTRL A  &llt _LOWER R  &lmt LSHFT S    &lmt LGUI T    &kp G           &none             &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL   &mt LGUI SQT  &none                 &kp M           &rmt RGUI N   &rmt RSHFT E      &rlt _LOWER I  &rmt RCTRL O     &kp SQT
+        /* LH */ &kp BSPC    &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C    &lmt LCTRL D   &llt _NUMPAD V                                  &kp HOME   /* RH */  &kp PG_UP                                       &rlt _NUMPAD K  &rmt RCTRL H  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &kp DEL
+        /* LH */ &mo _LOWER  &kp PG_UP     &sk PG_DN      &kp LEFT        &kp RIGHT                      &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB     &kp BSPC      &rt_lt _ARROWS SPACE                  &kp DOWN      &kp UP            &sk UNDER      &kp MINUS        &mo _LOWER
       >;
     };
 
@@ -60,11 +60,11 @@
     // TODO: Decide what to do about the now missing PG_DN, and END keypress behaviors
     qwerty {
       bindings = <
-        /* LH */ &trans  &trans          &trans           &trans            &trans           &trans            &trans                  /* RH */                  &trans  &trans            &trans          &trans              &trans           &trans             &trans
-        /* LH */ &trans  &kp Q           &kp W            &lh_lt _EXTEND E  &lh_lt _RAISE R  &kp T             &trans                  /* RH */                  &trans  &kp Y             &kp U           &kp I               &kp O            &kp P              &trans
-        /* LH */ &trans  &lh_hm LCTRL A  &lh_lt _LOWER S  &lh_hm LSHFT D    &lh_hm LGUI F    &kp G             &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp H             &rh_hm RGUI J   &rh_hm RSHFT K      &rh_lt _LOWER L  &rh_hm RCTRL SEMI  &trans
-        /* LH */ &trans  &lh_hm LGUI Z   &lh_hm LALT X    &lh_hm LSHFT C    &lh_hm LCTRL V   &lh_lt _NUMPAD B                  &trans  /* RH */  &trans                  &rh_lt _NUMPAD N  &rh_hm RCTRL M  &rh_hm RSHFT COMMA  &rh_hm RALT DOT  &rh_hm RGUI SLASH  &trans
-        /* LH */ &trans  &trans          &trans           &trans            &trans           &trans            &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans            &trans          &trans              &trans           &trans             &trans
+        /* LH */ &trans  &trans        &trans         &trans          &trans         &trans            &trans                  /* RH */                  &trans  &trans          &trans        &trans            &trans         &trans           &trans
+        /* LH */ &trans  &kp Q         &kp W          &llt _EXTEND E  &llt _RAISE R  &kp T             &trans                  /* RH */                  &trans  &kp Y           &kp U         &kp I             &kp O          &kp P            &trans
+        /* LH */ &trans  &lmt LCTRL A  &llt _LOWER S  &lmt LSHFT D    &lmt LGUI F    &kp G             &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp H           &rmt RGUI J   &rmt RSHFT K      &rlt _LOWER L  &rmt RCTRL SEMI  &trans
+        /* LH */ &trans  &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C    &lmt LCTRL V   &llt _NUMPAD B                    &trans  /* RH */  &trans                  &rlt _NUMPAD N  &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans
+        /* LH */ &trans  &trans        &trans         &trans          &trans         &trans            &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans          &trans        &trans            &trans         &trans           &trans
       >;
     };
 
