@@ -118,23 +118,23 @@ combo_slash {
   key-positions = <RH25 RH24>; // H & J
   bindings = <&kp SLASH>;
 };
+combo_enter {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH24 RH23>; // J & K
+  bindings = <&kp ENTER>;
+};
 combo_db_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH24 RH23 RH22>; // J, K & L
   bindings = <&m_db_underscore>;
 };
 combo_underscore {
-  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
+  timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH23 RH22>; // K & L
   bindings = <&kp UNDERSCORE>;
   layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
-combo_enter {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH34 RH33>; // M & COMMA
-  bindings = <&kp ENTER>;
-};
 combo_db_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH34 RH33 RH32>; // M, COMMA & DOT
