@@ -46,18 +46,12 @@ combo_lh_hyper {
   key-positions = <LH21 LH22 LH23 LH24>; // A, R, S, & T (A, S, D, & F)
   bindings = <&sk LC(LS(LA(LGUI)))>;
 };
-combo_esc_zmk_layer {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH23 LH24>; // S & T (D & F)
-  bindings = <&tog _ZMK>;
-  layers = <_ZMK>;
-};
-combo_lt_raise_esc {
+combo_lt_raise_tab {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 LH24>; // S & T (D & F)
   require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
   slow-release;
-  bindings = <&combo_lt _RAISE ESC>;
+  bindings = <&combo_lt _RAISE TAB>;
 };
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
