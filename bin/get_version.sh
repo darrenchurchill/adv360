@@ -48,9 +48,9 @@ for ((i = 0; i < ${#commit}; i++)); do
     formatted_commit+=$(transform_char "${commit:$i:1}")
 done
 
-# Combine the formatted string, add trailing carriage return
+# Combine the formatted string
 formatted_result="$formatted_date$formatted_branch$formatted_commit"
-formatted_result+="<&kp RET>"
+formatted_result+="<&none>"
 
 echo $formatted_result
 # Create new macro to define version, overwrite previous one
