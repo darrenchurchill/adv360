@@ -10,6 +10,11 @@
 #define QUICK_TAP_MS 200
 #define HOMEROW_MODS_FLAVOR "balanced"
 
+// This hold-tap behavior is used for combos that contain mod-tap keys to mimic
+// a QMK-style tap-only combo.
+// Binding a combo's hold behavior to trigger the same modifiers
+// as the home row mods for the combo's key positions is the best ZMK allows
+// right now to mimic a tap-only combo.
 combo_ht: combo_hold_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;

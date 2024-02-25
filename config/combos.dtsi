@@ -68,7 +68,7 @@ combo_question {
 combo_grave {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH33 LH34>; // C & D (C & V)
-  bindings = <&kp GRAVE>;
+  bindings = <&combo_ht RS(RCTRL) GRAVE>;
 };
 
 // Vertical Combos
@@ -124,7 +124,7 @@ combo_enter {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH24 RH23>; // N & E (J & K)
   require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
-  bindings = <&kp ENTER>;
+  bindings = <&combo_ht RG(RSHFT) ENTER>;
 };
 combo_db_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
