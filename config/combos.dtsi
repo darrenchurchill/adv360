@@ -45,28 +45,28 @@ combo_lh_hyper {
   key-positions = <LH21 LH22 LH23 LH24>; // A, S, D, & F
   bindings = <&sk LC(LS(LA(LGUI)))>;
 };
+combo_esc_zmk_layer {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH23 LH24>; // D & F
+  bindings = <&tog _ZMK>;
+  layers = <_ZMK>;
+};
+combo_lt_raise_esc {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH23 LH24>; // D & F
+  slow-release;
+  bindings = <&combo_lt _RAISE ESC>;
+};
 combo_question {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH24 LH25>; // F & G
   bindings = <&kp QUESTION>;
 };
 // Bottom Row
-combo_ht_lalt_lshft_grave {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH32 LH33>; // X & C
-  bindings = <&combo_ht LA(LSHFT) GRAVE>;
-};
-combo_esc_zmk_layer {
+combo_grave {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH33 LH34>; // C & V
-  bindings = <&tog _ZMK>;
-  layers = <_ZMK>;
-};
-combo_lt_raise_esc {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <LH33 LH34>; // C & V
-  slow-release;
-  bindings = <&combo_lt _RAISE ESC>;
+  bindings = <&kp GRAVE>;
 };
 
 // Vertical Combos
