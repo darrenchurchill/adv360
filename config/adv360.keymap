@@ -46,6 +46,7 @@
   keymap {
     compatible = "zmk,keymap";
 
+    // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
     colemak {
       bindings = <
         /* LH */ &kp EQUAL   &kp N7          &kp N8         &kp N9          &kp N0          &kp N5          &tog _LOWER                                /* RH */                           &mo _ZMK              &kp N6          &kp N1         &kp N2            &kp N3         &kp N4          &kp BSLH
@@ -56,8 +57,6 @@
       >;
     };
 
-    // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
-    // TODO: Decide what to do about the now missing PG_DN, and END keypress behaviors
     qwerty {
       bindings = <
         /* LH */ &trans  &trans        &trans         &trans          &trans         &trans            &trans                  /* RH */                  &trans  &trans          &trans        &trans            &trans         &trans           &trans
