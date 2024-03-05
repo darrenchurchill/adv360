@@ -33,6 +33,24 @@ combo_ht_m_trp_grave: combo_hold_tap_macro_triple_grave {
   bindings = <&kp>, <&m_trp_grave>;
 };
 
+combo_ht_m_db_under: combo_hold_tap_macro_double_underscore {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = "balanced";
+  bindings = <&kp>, <&m_db_underscore>;
+};
+
+combo_ht_m_db_minus: combo_hold_tap_macro_double_minus {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = "balanced";
+  bindings = <&kp>, <&m_db_minus>;
+};
+
 combo_lt: combo_layer_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;

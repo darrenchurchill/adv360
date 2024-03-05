@@ -135,12 +135,13 @@ combo_enter {
 combo_db_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH24 RH23 RH22>; // N, E, & I (J, K & L)
-  bindings = <&m_db_underscore>;
+  // See note above regarding dummy parameter.
+  bindings = <&combo_ht_m_db_under RG(RS(RALT)) 0>;
 };
 combo_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH23 RH22>; // E & I (K & L)
-  bindings = <&kp UNDERSCORE>;
+  bindings = <&combo_ht RS(RALT) UNDERSCORE>;
   layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
@@ -151,14 +152,15 @@ combo_double_quote {
 };
 combo_db_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH14 RH13 RH12>; // L, U, & Y (U, I, & O)
-  bindings = <&m_db_minus>;
+  key-positions = <RH34 RH33 RH32>; // H, COMMA, & DOT (M, COMMA, & DOT)
+  // See note above regarding dummy parameter.
+  bindings = <&combo_ht_m_db_minus RC(RS(RALT)) 0>;
 };
 combo_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH13 RH12>; // U & Y (I & O)
-  bindings = <&kp MINUS>;
-  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast [] rolls
+  key-positions = <RH33 RH32>; // COMMA & DOT (COMMA & DOT)
+  bindings = <&combo_ht RS(RALT) MINUS>;
+  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast {} rolls
 };
 
 // Vertical Combos
