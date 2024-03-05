@@ -110,17 +110,6 @@ combo_single_quote {
   key-positions = <RH14 RH13>; // L & U (U & I)
   bindings = <&kp SINGLE_QUOTE>;
 };
-combo_db_minus {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH14 RH13 RH12>; // L, U, & Y (U, I, & O)
-  bindings = <&m_db_minus>;
-};
-combo_minus {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
-  key-positions = <RH13 RH12>; // U & Y (I & O)
-  bindings = <&kp MINUS>;
-  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast [] rolls
-};
 // Home Row
 combo_rh_meh {
   timeout-ms = <COMBO_TIMEOUT_MS>;
@@ -159,6 +148,17 @@ combo_double_quote {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH34 RH33>; // H & COMMA (M & COMMA)
   bindings = <&combo_ht RC(RSHFT) DOUBLE_QUOTES>;
+};
+combo_db_minus {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH14 RH13 RH12>; // L, U, & Y (U, I, & O)
+  bindings = <&m_db_minus>;
+};
+combo_minus {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH13 RH12>; // U & Y (I & O)
+  bindings = <&kp MINUS>;
+  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast [] rolls
 };
 
 // Vertical Combos
