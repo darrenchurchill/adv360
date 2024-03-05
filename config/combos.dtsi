@@ -149,7 +149,7 @@ combo_db_underscore {
   bindings = <&m_db_underscore>;
 };
 combo_underscore {
-  timeout-ms = <COMBO_TIMEOUT_MS>;
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH23 RH22>; // E & I (K & L)
   bindings = <&kp UNDERSCORE>;
   layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
