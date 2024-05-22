@@ -2,15 +2,16 @@
 // https://zmk.dev/docs/behaviors/layers
 #pragma once
 
-#define _COLEMAK  0
-#define _QWERTY   1
-#define _LOWER    2
-#define _NUMPAD   3
-#define _RAISE    4
-#define _EXTEND   5
-#define _FN       6
-#define _ARROWS   7
-#define _ZMK      8
+#define _COLEMAK   0
+#define _QWERTY    1
+#define _LOWER     2
+#define _NUMPAD    3
+#define _RAISE     4
+#define _EXTEND    5
+#define _FN        6
+#define _ARROWS    7
+#define _TAP_ONLY  8
+#define _ZMK       9
 
 // NOTE: If you add a layer, consider updating this macro for any combos
 // containing a layers property.
@@ -22,4 +23,5 @@ _RAISE \
 _EXTEND \
 _FN \
 _ARROWS \
+_TAP_ONLY \
 _ZMK

@@ -47,13 +47,15 @@
     compatible = "zmk,keymap";
 
     // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
+    // TODO: See if a layer without any mod-tap keys will work at the MacOS
+    // filevault login screen
     colemak {
       bindings = <
-        /* LH */ &kp GRAVE   &kp N7          &kp N8          &kp N9          &kp N0          &kp N5  &tog _LOWER                                        /* RH */                           &mo _ZMK              &kp N6  &kp N1         &kp N2            &kp N3          &kp N4           &kp BSLH
-        /* LH */ &kp TAB     &llt _FN Q      &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                              /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &rlt _FN SQT     &kp LS(TAB)
-        /* LH */ &kp ESC     &lmt_c LCTRL A  &llt _NUMPAD R  &llt _LOWER S   &lmt_g LGUI T   &kp G   &kp GRAVE         &mt LGUI DQT          &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M   &rmt_g RGUI N  &rlt _LOWER E     &rlt _NUMPAD I  &rmt RCTRL O     &kp ENTER
-        /* LH */ &kp BSPC    &lmt LGUI Z     &lmt LALT X     &lmt LSHFT C    &lmt_c LCTRL D  &kp V                                           &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT   &rmt RGUI SLASH  &kp DEL
-        /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &lt_lt _NUMPAD ENTER  &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp LBKT        &kp RBKT         &mo _LOWER
+        /* LH */ &kp GRAVE       &kp N7          &kp N8          &kp N9          &kp N0          &kp N5  &tog _LOWER                                        /* RH */                           &mo _ZMK              &kp N6  &kp N1         &kp N2            &kp N3          &kp N4           &kp BSLH
+        /* LH */ &kp TAB         &llt _FN Q      &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                              /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &rlt _FN SQT     &kp LS(TAB)
+        /* LH */ &kp ESC         &lmt_c LCTRL A  &llt _NUMPAD R  &llt _LOWER S   &lmt_g LGUI T   &kp G   &kp GRAVE         &mt LGUI DQT          &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M   &rmt_g RGUI N  &rlt _LOWER E     &rlt _NUMPAD I  &rmt RCTRL O     &kp ENTER
+        /* LH */ &kp BSPC        &lmt LGUI Z     &lmt LALT X     &lmt LSHFT C    &lmt_c LCTRL D  &kp V                                           &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT   &rmt RGUI SLASH  &kp DEL
+        /* LH */ &tog _TAP_ONLY  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &lt_lt _NUMPAD ENTER  &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp LBKT        &kp RBKT         &mo _LOWER
       >;
     };
 
@@ -124,6 +126,16 @@
         /* LH */ &trans  &trans  &trans  &trans    &trans   &trans  &trans                &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
         /* LH */ &trans  &trans  &trans  &trans    &trans   &trans                                &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
         /* LH */ &trans  &trans  &trans  &kp BSPC  &kp DEL          &lt_mt LSHFT LS(ESC)  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
+      >;
+    };
+
+    tap_only {
+      bindings = <
+        /* LH */ &trans          &trans  &trans  &trans  &trans  &trans  &trans                        /* RH */                    &trans     &trans  &trans  &trans     &trans   &trans     &trans
+        /* LH */ &kp TAB         &kp Q   &kp W   &kp F   &kp P   &kp B   &trans                        /* RH */                    &trans     &kp J   &kp L   &kp U      &kp Y    &kp SQT    &trans
+        /* LH */ &kp ESC         &kp A   &kp R   &kp S   &kp T   &kp G   &trans     &trans     &trans  /* RH */  &trans  &trans    &trans     &kp M   &kp N   &kp E      &kp I    &kp O      &kp ENTER
+        /* LH */ &trans          &kp Z   &kp X   &kp C   &kp D   &kp V                         &trans  /* RH */  &trans                       &kp K   &kp H   &kp COMMA  &kp DOT  &kp SLASH  &trans
+        /* LH */ &tog _TAP_ONLY  &trans  &trans  &trans  &trans          &kp LSHFT  &kp ENTER  &trans  /* RH */  &trans  &kp BSPC  &kp SPACE          &trans  &trans     &trans   &trans     &trans
       >;
     };
 
