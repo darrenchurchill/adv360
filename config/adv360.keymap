@@ -148,6 +148,36 @@
         /* LH */ &none  &none        &none            &none       &none                       &tog _ZMK  &none  &none  /* RH */  &none  &none  &none          &none         &none         &none         &none         &none
       >;
     };
+
+    lead {
+      bindings = <
+        /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                /* RH */                &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                /* RH */                &to 0  &to 0  &to _LEAD_L  &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0  &to 0  &to 0        &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                &to 0  /* RH */  &to 0                &to 0  &to 0        &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0         &to 0        &to 0  &to 0  &to 0  &to 0
+      >;
+    };
+
+    lead_l {
+      bindings = <
+        /* LH */ &to 0  &to 0        &to 0  &to 0         &to 0          &to 0  &to 0                /* RH */                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to _QWERTY  &to 0  &to 0         &to 0          &to 0  &to 0                /* RH */                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0        &to 0  &to 0         &to _TAP_ONLY  &to 0  &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0        &to 0  &to _COLEMAK  &to 0          &to 0                &to 0  /* RH */  &to 0                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+        /* LH */ &to 0  &to 0        &to 0  &to 0         &to 0                 &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0
+      >;
+    };
+
+    // lead_template {
+    //   bindings = <
+    //     /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                /* RH */                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                /* RH */                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0  &to 0                &to 0  /* RH */  &to 0                &to 0  &to 0  &to 0  &to 0  &to 0  &to 0
+    //     /* LH */ &to 0  &to 0  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  /* RH */  &to 0  &to 0  &to 0         &to 0  &to 0  &to 0  &to 0  &to 0
+    //   >;
+    // };
   };
 
   // template {

@@ -12,6 +12,8 @@
 #define _ARROWS    7
 #define _TAP_ONLY  8
 #define _ZMK       9
+#define _LEAD     10
+#define _LEAD_L   11
 
 // NOTE: If you add a layer, consider updating this macro for any combos
 // containing a layers property.

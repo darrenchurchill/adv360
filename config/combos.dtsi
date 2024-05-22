@@ -118,6 +118,11 @@ combo_gt_equal {
   key-positions = <LH24 LH34>; // T & D (F & V)
   bindings = <&m_gt_equal>;
 };
+combo_leader_lh {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH25 LH35>; // G & V (G & B)
+  bindings = <&to _LEAD>;
+};
 
 
 // Right Hand
@@ -204,6 +209,11 @@ combo_rarrow {
   bindings = <&m_rarrow>;
 };
 // Home + Bottom Rows
+combo_leader_rh {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RH25 RH35>; // M & K (H & N)
+  bindings = <&to _LEAD>;
+};
 combo_caret {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH24 RH34>; // N & H (J & M)
