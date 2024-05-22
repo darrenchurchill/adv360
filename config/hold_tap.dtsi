@@ -104,6 +104,17 @@ llt: lh_layer_tap {
   hold-trigger-on-release;
 };
 
+lt_lt: left_thumb_layer_tap {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <THUMB_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  // "hold-preferred" because in my layout, left thumb is most likely a hold key
+  // if it's rolled with another keypress.
+  flavor = "hold-preferred";
+  bindings = <&mo>, <&kp>;
+};
+
 lt_mt: left_thumb_mod_tap {
   compatible = "zmk,behavior-hold-tap";
   #binding-cells = <2>;
