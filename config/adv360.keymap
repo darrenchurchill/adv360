@@ -119,11 +119,11 @@
 
     arrows {
       bindings = <
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                                &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans          &lt_mt LSHFT LS(ESC)  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans    &trans   &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans    &trans   &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans    &trans   &trans  &trans                &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
+        /* LH */ &trans  &trans  &trans  &trans    &trans   &trans                                &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &kp BSPC  &kp DEL          &lt_mt LSHFT LS(ESC)  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
       >;
     };
 
