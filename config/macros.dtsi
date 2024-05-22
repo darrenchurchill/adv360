@@ -27,6 +27,19 @@ no_lshft: no_lshft {
     , <&macro_param_1to1>, <&macro_tap &kp MACRO_PLACEHOLDER>;
 };
 
+// Word Macros
+m_js: m_javascript {
+  compatible = "zmk,behavior-macro";
+  #binding-cells = <0>;
+  wait-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  tap-ms = <MACRO_HOST_SEQUENCE_DELAY>;
+  bindings
+    = <&macro_press &kp LSHFT>, <&macro_tap &kp J>, <&macro_release &kp LSHFT>
+    , <&macro_tap &kp A &kp V &kp A>
+    , <&macro_press &kp LSHFT>, <&macro_tap &kp S>, <&macro_release &kp LSHFT>
+    , <&macro_tap &kp C &kp R &kp I &kp P &kp T>;
+};
+
 
 // Symbol Macros
 m_trp_grave: m_trp_grave {

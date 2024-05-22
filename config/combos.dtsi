@@ -11,6 +11,11 @@
 #define COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS 100
 
 // Both Hands
+combo_javascript {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <LH23 RH15>; // S & J (D & Y)
+  bindings = <&m_js>;
+};
 combo_caps_word {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 RH23>; // S & E (D & K)
