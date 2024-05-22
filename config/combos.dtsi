@@ -16,6 +16,16 @@ combo_javascript {
   key-positions = <LH23 RH15>; // S & J (D & Y)
   bindings = <&m_js>;
 };
+combo_tog_numpad_layer {
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
+  key-positions = <LH22 RH22>; // R & I (S & L)
+  bindings = <&tog _NUMPAD>;
+};
+combo_tog_lower_layer {
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
+  key-positions = <LH23 RH23>; // S & E (D & K)
+  bindings = <&tog _LOWER>;
+};
 combo_caps_word {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH33 RH33>; // C & COMMA (C & COMMA)
