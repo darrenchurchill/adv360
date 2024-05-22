@@ -18,7 +18,7 @@ combo_javascript {
 };
 combo_caps_word {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
-  key-positions = <LH23 RH23>; // S & E (D & K)
+  key-positions = <LH33 RH33>; // C & COMMA (C & COMMA)
   bindings = <&caps_word>;
 };
 combo_tog_zmk_layer {

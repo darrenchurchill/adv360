@@ -49,31 +49,41 @@
     // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
     colemak {
       bindings = <
-        /* LH */ &kp GRAVE   &kp N7          &kp N8         &kp N9          &kp N0          &kp N5          &tog _LOWER                                /* RH */                           &mo _ZMK              &kp N6          &kp N1         &kp N2            &kp N3         &kp N4          &kp BSLH
-        /* LH */ &kp TAB     &kp Q           &kp W          &llt _EXTEND F  &llt _RAISE P   &kp B           &none                                      /* RH */                           &none                 &kp J           &kp L          &kp U             &kp Y          &kp SQT         &kp LS(TAB)
-        /* LH */ &kp ESC     &lmt_c LCTRL A  &llt _LOWER R  &lmt LSHFT S    &lmt_g LGUI T   &kp G           &kp GRAVE         &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M           &rmt_g RGUI N  &rmt RSHFT E      &rlt _LOWER I  &rmt RCTRL O    &kp ENTER
-        /* LH */ &kp BSPC    &lmt LGUI Z     &lmt LALT X    &lmt LSHFT C    &lmt_c LCTRL D  &llt _NUMPAD V                                  &kp HOME   /* RH */  &kp PG_UP                                      &rlt _NUMPAD K  &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SEMI  &kp DEL
-        /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN      &kp LEFT        &kp RIGHT                       &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE                  &kp DOWN       &kp UP            &kp UNDER      &kp MINUS       &mo _LOWER
+        /* LH */ &kp GRAVE   &kp N7          &kp N8          &kp N9          &kp N0          &kp N5  &tog _LOWER                                /* RH */                           &mo _ZMK              &kp N6  &kp N1         &kp N2            &kp N3          &kp N4          &kp BSLH
+        /* LH */ &kp TAB     &kp Q           &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                      /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &kp SQT         &kp LS(TAB)
+        /* LH */ &kp ESC     &lmt_c LCTRL A  &llt _NUMPAD R  &llt _LOWER S   &lmt_g LGUI T   &kp G   &kp GRAVE         &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M   &rmt_g RGUI N  &rlt _LOWER E     &rlt _NUMPAD I  &rmt RCTRL O    &kp ENTER
+        /* LH */ &kp BSPC    &lmt LGUI Z     &lmt LALT X     &lmt LSHFT C    &lmt_c LCTRL D  &kp V                                   &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT   &rmt RGUI SEMI  &kp DEL
+        /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp UNDER       &kp MINUS       &mo _LOWER
       >;
     };
 
     qwerty {
       bindings = <
-        /* LH */ &trans  &trans        &trans         &trans          &trans         &trans            &trans                  /* RH */                  &trans  &trans          &trans        &trans            &trans         &trans           &trans
-        /* LH */ &trans  &kp Q         &kp W          &llt _EXTEND E  &llt _RAISE R  &kp T             &trans                  /* RH */                  &trans  &kp Y           &kp U         &kp I             &kp O          &kp P            &trans
-        /* LH */ &trans  &lmt LCTRL A  &llt _LOWER S  &lmt LSHFT D    &lmt LGUI F    &kp G             &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp H           &rmt RGUI J   &rmt RSHFT K      &rlt _LOWER L  &rmt RCTRL SEMI  &trans
-        /* LH */ &trans  &lmt LGUI Z   &lmt LALT X    &lmt LSHFT C    &lmt LCTRL V   &llt _NUMPAD B                    &trans  /* RH */  &trans                  &rlt _NUMPAD N  &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans
-        /* LH */ &trans  &trans        &trans         &trans          &trans         &trans            &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans          &trans        &trans            &trans         &trans           &trans
+        /* LH */ &trans  &trans        &trans          &trans          &trans         &trans  &trans                  /* RH */                  &trans  &trans  &trans        &trans            &trans         &trans           &trans
+        /* LH */ &trans  &kp Q         &kp W           &llt _EXTEND E  &llt _RAISE R  &kp T   &trans                  /* RH */                  &trans  &kp Y   &kp U         &kp I             &kp  O         &kp P            &trans
+        /* LH */ &trans  &lmt LCTRL A  &llt _NUMPAD S  &llt _LOWER D   &lmt LGUI F    &kp G   &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp H   &rmt RGUI J   &rlt _LOWER K     &rlt _NUMPAD L &rmt RCTRL SEMI  &trans
+        /* LH */ &trans  &lmt LGUI Z   &lmt LALT X     &lmt LSHFT C    &lmt LCTRL V   &kp B                   &trans  /* RH */  &trans                  &kp N   &rmt RCTRL M  &rmt RSHFT COMMA  &rmt RALT DOT  &rmt RGUI SLASH  &trans
+        /* LH */ &trans  &trans        &trans          &trans          &trans         &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans  &trans        &trans            &trans         &trans           &trans
       >;
     };
 
     lower {
       bindings = <
-        /* LH */ &trans  &trans    &trans           &trans     &trans           &trans    &trans                  /* RH */                  &trans  &trans    &trans     &trans    &trans    &trans     &trans
-        /* LH */ &trans  &kp N7    &kp N8           &kp N9     &kp N0           &kp N5    &trans                  /* RH */                  &trans  &kp N6    &kp N1     &kp N2    &kp N3    &kp N4     &trans
-        /* LH */ &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans
-        /* LH */ &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans
-        /* LH */ &trans  &trans    &kp LT           &kp GT     &trans                     &trans  &trans  &trans  /* RH */  &trans  &trans  &trans            &trans     &kp LBKT  &kp RBKT  &trans     &trans
+        /* LH */ &trans  &trans    &trans              &trans     &trans           &trans    &trans                  /* RH */                  &trans  &trans    &trans     &trans    &trans    &trans     &trans
+        /* LH */ &trans  &trans    &kp LT              &kp GT     &trans           &trans    &trans                  /* RH */                  &trans  &trans    &trans     &kp LBKT  &kp RBKT  &trans     &trans
+        /* LH */ &trans  &kp EXCL  &llt _NUMPAD MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans
+        /* LH */ &trans  &kp BSLH  &no_lshft SLASH     &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans
+        /* LH */ &trans  &trans    &trans              &trans     &trans                     &trans  &trans  &trans  /* RH */  &trans  &trans  &trans            &trans     &trans    &trans    &trans     &trans
+      >;
+    };
+
+    numpad {
+      bindings = <
+        /* LH */ &trans  &trans    &trans           &trans     &trans           &trans    &trans                  /* RH */                  &trans  &trans  &trans  &trans  &trans  &trans   &trans
+        /* LH */ &trans  &trans    &kp LT           &kp GT     &kp SLASH        &trans    &trans                  /* RH */                  &trans  &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
+        /* LH */ &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &trans
+        /* LH */ &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
+        /* LH */ &trans  &trans    &trans           &trans     &trans                     &trans  &trans  &trans  /* RH */  &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
       >;
     };
 
@@ -104,16 +114,6 @@
         /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
         /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
         /* LH */ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
-      >;
-    };
-
-    numpad {
-      bindings = <
-        /* LH */ &trans  &trans     &trans  &trans     &trans   &trans     &trans                  /* RH */                  &trans  &trans     &trans  &trans     &trans   &trans     &trans
-        /* LH */ &trans  &kp SLASH  &kp N7  &kp N8     &kp N9   &kp MINUS  &trans                  /* RH */                  &trans  &kp SLASH  &kp N7  &kp N8     &kp N9   &kp MINUS  &trans
-        /* LH */ &trans  &kp ASTRK  &kp N4  &kp N5     &kp N6   &kp PLUS   &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp ASTRK  &kp N4  &kp N5     &kp N6   &kp PLUS   &trans
-        /* LH */ &trans  &kp N0     &kp N1  &kp N2     &kp N3   &kp EQUAL                  &trans  /* RH */  &trans                  &kp N0     &kp N1  &kp N2     &kp N3   &kp EQUAL  &trans
-        /* LH */ &trans  &trans     &trans  &kp ENTER  &kp DOT             &trans  &trans  &trans  /* RH */  &trans  &trans  &trans             &trans  &kp ENTER  &kp DOT  &trans     &trans
       >;
     };
 

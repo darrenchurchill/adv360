@@ -5,8 +5,8 @@
 #define _COLEMAK  0
 #define _QWERTY   1
 #define _LOWER    2
-#define _RAISE    3
-#define _EXTEND   4
-#define _ARROWS   5
-#define _NUMPAD   6
+#define _NUMPAD   3
+#define _RAISE    4
+#define _EXTEND   5
+#define _ARROWS   6
 #define _ZMK      7
