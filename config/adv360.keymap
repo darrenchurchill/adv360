@@ -129,11 +129,11 @@
 
     zmk {
       bindings = <
-        /* LH */ &none  &none        &none  &none       &bt BT_SEL 0  &none         &none                    /* RH */                &none   &none    &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
-        /* LH */ &none  &bootloader  &none  &none       &none         &bl BL_TOG    &none                    /* RH */                &none   &none    &out OUT_USB     &none         &none         &bootloader   &none
-        /* LH */ &none  &none        &none  &none       &none         &none         &none      &none  &none  /* RH */  &none  &none  &none   &none    &bl BL_DEC       &bl BL_INC    BAT_LVL       &none         &none
-        /* LH */ &none  &sys_reset   &none  &bt BT_CLR  &macro_ver    &out OUT_BLE                    &none  /* RH */  &none                 &none    &rgb_ug RGB_TOG  &none         &none         &sys_reset    &none
-        /* LH */ &none  &none        &none  &none       &none                       &tog _ZMK  &none  &none  /* RH */  &none  &none  &none            &none            &none         &none         &none         &none
+        /* LH */ &none  &none        &none            &none       &bt BT_SEL 0  &none         &none                    /* RH */                &none   &none  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+        /* LH */ &none  &bootloader  &none            &none       &none         &out OUT_BLE  &none                    /* RH */                &none   &none  BAT_LVL       &out OUT_USB  &none         &bootloader   &none
+        /* LH */ &none  &none        &rgb_ug RGB_TOG  &none       &bl BL_TOG    &none         &none      &none  &none  /* RH */  &none  &none  &none   &none  &bl BL_DEC    &bl BL_INC    &none         &none         &none
+        /* LH */ &none  &sys_reset   &none            &bt BT_CLR  &none         &macro_ver                      &none  /* RH */  &none                 &none  &none         &none         &none         &sys_reset    &none
+        /* LH */ &none  &none        &none            &none       &none                       &tog _ZMK  &none  &none  /* RH */  &none  &none  &none          &none         &none         &none         &none         &none
       >;
     };
   };
