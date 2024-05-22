@@ -61,6 +61,14 @@ combo_lh_hyper {
   key-positions = <LH21 LH22 LH23 LH24>; // A, R, S, & T (A, S, D, & F)
   bindings = <&sk LC(LS(LA(LGUI)))>;
 };
+// TODO: change these tab combos to just a tap-only combo => use TAB / LS(TAB)
+// for both &combo_ht args
+combo_lt_lower_lshift_tab {
+  timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
+  key-positions = <LH22 LH23>; // R & S (S & D)
+  require-prior-idle-ms = <COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS>;
+  bindings = <&combo_lt _LOWER LS(TAB)>;
+};
 combo_lt_raise_tab {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <LH23 LH24>; // S & T (D & F)
