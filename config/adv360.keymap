@@ -70,7 +70,7 @@
     lower {
       bindings = <
         /* LH */ &trans  &trans    &trans              &trans     &trans           &trans    &trans                  /* RH */                  &trans  &trans    &trans     &trans    &trans    &trans     &trans
-        /* LH */ &trans  &trans    &kp LT              &kp GT     &trans           &trans    &trans                  /* RH */                  &trans  &trans    &trans     &kp LBKT  &kp RBKT  &trans     &trans
+        /* LH */ &trans  &trans    &kp LT              &kp GT     &kp SLASH        &trans    &trans                  /* RH */                  &trans  &trans    &trans     &kp LBKT  &kp RBKT  &trans     &trans
         /* LH */ &trans  &kp EXCL  &llt _NUMPAD MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp PIPE  &kp COLON  &kp LPAR  &kp RPAR  &kp PRCNT  &trans
         /* LH */ &trans  &kp BSLH  &no_lshft SLASH     &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &kp AMPS  &kp DLLR   &kp LBRC  &kp RBRC  &trans     &trans
         /* LH */ &trans  &trans    &trans              &trans     &trans                     &trans  &trans  &trans  /* RH */  &trans  &trans  &trans            &trans     &trans    &trans    &trans     &trans
