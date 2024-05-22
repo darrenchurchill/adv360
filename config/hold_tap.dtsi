@@ -109,7 +109,9 @@ lt_mt: left_thumb_mod_tap {
   #binding-cells = <2>;
   tapping-term-ms = <THUMB_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
-  // flavor = "balanced";
+  // "hold-preferred" because in my layout, left thumb is most likely a hold key
+  // if it's rolled with another keypress.
+  flavor = "hold-preferred";
   bindings = <&kp>, <&kp>;
 };
 
@@ -151,6 +153,7 @@ rt_lt: rt_layer_tap {
   #binding-cells = <2>;
   tapping-term-ms = <THUMB_TAPPING_TERM_MS>;
   quick-tap-ms = <QUICK_TAP_MS>;
+  // Set to balanced because right thumb is also space, a commonly tapped key
   flavor = "balanced";
   bindings = <&mo>, <&kp>;
 };
