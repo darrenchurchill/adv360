@@ -53,7 +53,7 @@
         /* LH */ &kp TAB     &llt _FN Q      &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                      /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &rlt _FN SQT     &kp LS(TAB)
         /* LH */ &kp ESC     &lmt_c LCTRL A  &llt _NUMPAD R  &llt _LOWER S   &lmt_g LGUI T   &kp G   &kp GRAVE         &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M   &rmt_g RGUI N  &rlt _LOWER E     &rlt _NUMPAD I  &rmt RCTRL O     &kp ENTER
         /* LH */ &kp BSPC    &lmt LGUI Z     &lmt LALT X     &lmt LSHFT C    &lmt_c LCTRL D  &kp V                                   &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT   &rmt RGUI SLASH  &kp DEL
-        /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp UNDER       &kp MINUS        &mo _LOWER
+        /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp LBKT        &kp RBKT         &mo _LOWER
       >;
     };
 
