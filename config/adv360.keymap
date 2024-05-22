@@ -47,6 +47,7 @@
     compatible = "zmk,keymap";
 
     // TODO: Add macros like you have in QMK for the keymap bindings L/R hands and rows
+    // TODO: add curly single and double quote symbols somewhere in the keymap
     // TODO: See if a layer without any mod-tap keys will work at the MacOS
     // filevault login screen
     colemak {

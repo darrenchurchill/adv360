@@ -11,6 +11,9 @@
 #define COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS 100
 
 // Both Hands
+// NOTE: I saw someone have a good idea to use combos with BSPC to generate
+// macros, often ones that send strings. See this link:
+// https://github.com/precondition/dactyl-manuform-keymap
 combo_javascript {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 RH15>; // S & J (D & Y)
