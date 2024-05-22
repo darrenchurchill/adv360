@@ -89,11 +89,11 @@
 
     raise {
       bindings = <
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans  &trans    &trans            &trans            &trans          &trans            &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans  &kp HOME  &kp PG_DN         &kp PG_UP         &kp END         &kp LG(GRAVE)     &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp LEFT  &kp DOWN          &kp UP            &kp RIGHT       &kp RC(GRAVE)     &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  /* RH */  &trans                  &trans    &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp LC(LEFT)    &kp LC(RIGHT)     &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  /* RH */  &trans  &trans  &trans            &kp LC(PG_UP)     &kp LC(PG_DN)     &kp LC(LA(UP))  &kp LC(LA(DOWN))  &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans  &trans    &trans            &trans            &trans          &trans            &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans  &kp HOME  &kp PG_DN         &kp PG_UP         &kp END         &kp LG(GRAVE)     &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  /* RH */  &trans  &trans  &trans  &kp LEFT  &kp DOWN          &kp UP            &kp RIGHT       &kp RC(GRAVE)     &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                                &trans  /* RH */  &trans                  &trans    &kp LS(LG(LBKT))  &kp LS(LG(RBKT))  &kp LC(LEFT)    &kp LC(RIGHT)     &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans          &lt_mt LSHFT LS(ESC)  &trans  &trans  /* RH */  &trans  &trans  &trans            &kp LC(PG_UP)     &kp LC(PG_DN)     &kp LC(LA(UP))  &kp LC(LA(DOWN))  &trans
       >;
     };
 
@@ -119,11 +119,11 @@
 
     arrows {
       bindings = <
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                  /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
-        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
-        /* LH */ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                                /* RH */                  &trans    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans                &trans  &trans  /* RH */  &trans  &trans  &kp BSPC  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &kp DEL
+        /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                                &trans  /* RH */  &trans                    &trans    &trans    &trans  &trans     &trans  &trans
+        /* LH */ &trans  &trans  &trans  &trans  &trans          &lt_mt LSHFT LS(ESC)  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans    &trans  &trans     &trans  &trans
       >;
     };
 
