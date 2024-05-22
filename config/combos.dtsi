@@ -157,7 +157,7 @@ combo_underscore {
   timeout-ms = <COMBO_TIMEOUT_MS_FAST>;
   key-positions = <RH23 RH22>; // E & I (K & L)
   bindings = <&combo_ht RS(RALT) UNDERSCORE>;
-  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast () rolls
+  layers  = <_All_EXCEPT_LOWER>; // all but _LOWER, for fast () rolls
 };
 // Bottom Row
 combo_double_quote {
@@ -175,7 +175,7 @@ combo_minus {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <RH33 RH32>; // COMMA & DOT (COMMA & DOT)
   bindings = <&combo_ht RS(RALT) MINUS>;
-  layers  = <_QWERTY _COLEMAK _RAISE _EXTEND _ZMK>; // all but _LOWER, for fast {} rolls
+  layers  = <_All_EXCEPT_LOWER>; // all but _LOWER, for fast {} rolls
 };
 
 // Vertical Combos
