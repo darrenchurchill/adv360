@@ -50,7 +50,7 @@
     colemak {
       bindings = <
         /* LH */ &kp GRAVE   &kp N7          &kp N8          &kp N9          &kp N0          &kp N5  &tog _LOWER                                /* RH */                           &mo _ZMK              &kp N6  &kp N1         &kp N2            &kp N3          &kp N4          &kp BSLH
-        /* LH */ &kp TAB     &kp Q           &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                      /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &kp SQT         &kp LS(TAB)
+        /* LH */ &kp TAB     &llt _FN Q      &kp W           &llt _EXTEND F  &llt _RAISE P   &kp B   &none                                      /* RH */                           &none                 &kp J   &kp L          &kp U             &kp Y           &rlt _FN SQT    &kp LS(TAB)
         /* LH */ &kp ESC     &lmt_c LCTRL A  &llt _NUMPAD R  &llt _LOWER S   &lmt_g LGUI T   &kp G   &kp GRAVE         &mt LGUI DQT  &kp LCTRL  /* RH */  &kp RCTRL  &mt LGUI SQT  &kp DQT               &kp M   &rmt_g RGUI N  &rlt _LOWER E     &rlt _NUMPAD I  &rmt RCTRL O    &kp ENTER
         /* LH */ &kp BSPC    &lmt LGUI Z     &lmt LALT X     &lmt LSHFT C    &lmt_c LCTRL D  &kp V                                   &kp HOME   /* RH */  &kp PG_UP                                      &kp K   &rmt RCTRL H   &rmt RSHFT COMMA  &rmt RALT DOT   &rmt RGUI SEMI  &kp DEL
         /* LH */ &mo _LOWER  &kp PG_UP       &kp PG_DN       &kp LEFT        &kp RIGHT               &lt_mt LSHFT ESC  &kp ENTER     &kp TAB    /* RH */  &kp TAB    &kp BSPC      &rt_lt _ARROWS SPACE          &kp DOWN       &kp UP            &kp UNDER       &kp MINUS       &mo _LOWER
@@ -104,6 +104,16 @@
         /* LH */ &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &trans      &trans        &trans        &trans      &trans    &trans
         /* LH */ &trans  &trans  &trans  &trans  &trans  &trans                  &trans  /* RH */  &trans                  &trans      &kp C_MUTE    &trans        &trans      &trans    &trans
         /* LH */ &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  /* RH */  &trans  &trans  &trans              &trans        &trans        &trans      &trans    &trans
+      >;
+    };
+
+    fn {
+      bindings = <
+        /* LH */ &trans  &trans   &trans   &trans   &trans   &trans   &trans                  /* RH */                  &trans  &trans   &trans  &trans  &trans  &trans   &trans
+        /* LH */ &trans  &trans   &trans   &trans   &trans   &trans   &trans                  /* RH */                  &trans  &kp F15  &kp F7  &kp F8  &kp F9  &kp F10  &trans
+        /* LH */ &trans  &kp F19  &kp F18  &kp F17  &kp F16  &kp F15  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp F14  &kp F1  &kp F2  &kp F3  &kp F11  &trans
+        /* LH */ &trans  &kp F24  &kp F23  &kp F22  &kp F21  &kp F20                  &trans  /* RH */  &trans                  &kp F13  &kp F4  &kp F5  &kp F6  &kp F12  &trans
+        /* LH */ &trans  &trans   &trans   &trans   &trans            &trans  &trans  &trans  /* RH */  &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
       >;
     };
 
