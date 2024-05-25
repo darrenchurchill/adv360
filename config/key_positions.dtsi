@@ -141,8 +141,8 @@
                               RH35 RH34 RH33 RH32 RH31 RH30 \
                                    RH44 RH43 RH42 RH41 RH40
 
-#define THUMBS_RIGHT       RT01 RT00 \
-                                RT10 \
+#define THUMBS_RIGHT  RT01 RT00 \
+                      RT10 \
                       RT22 RT21 RT20
 
 // For use with lmt_ctrl's hold-trigger-key-positions
@@ -151,6 +151,6 @@
 // keyboard input sources (i.e. QWERTY to Colemak). This is annoying to
 // accidentally trigger.
 // Remove SPACE positions
-#define THUMBS_RIGHT_CTRL_SAFE       RT01 RT00 \
-                                          RT10 \
+#define THUMBS_RIGHT_CTRL_SAFE  RT01 RT00 \
+                                RT10 \
                                 RT22      RT20
