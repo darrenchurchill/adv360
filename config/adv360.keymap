@@ -83,9 +83,9 @@
     numpad {
       bindings = <
         /* LH */ &trans  &trans    &trans           &trans     &trans           &trans    &trans                  /* RH */                  &trans  &trans  &trans  &trans  &trans  &trans   &trans
-        /* LH */ &trans  &trans    &kp LT           &kp GT     &kp SLASH        &trans    &trans                  /* RH */                  &trans  &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
-        /* LH */ &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT  &trans
-        /* LH */ &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &trans  &kp N4  &kp N5  &kp N6  &trans   &trans
+        /* LH */ &trans  &trans    &kp LT           &kp GT     &kp SLASH        &trans    &trans                  /* RH */                  &trans  &trans  &kp N1  &kp N2  &kp N3  &trans   &trans
+        /* LH */ &trans  &kp EXCL  &no_lshft MINUS  &kp PLUS   &no_lshft EQUAL  &kp HASH  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp N0  &kp N4  &kp N5  &kp N6  &kp DOT  &trans
+        /* LH */ &trans  &kp BSLH  &no_lshft SLASH  &kp ASTRK  &kp CARET        &kp AT                    &trans  /* RH */  &trans                  &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
         /* LH */ &trans  &trans    &trans           &trans     &trans                     &trans  &trans  &trans  /* RH */  &trans  &trans  &trans          &trans  &trans  &trans  &trans   &trans
       >;
     };
@@ -110,12 +110,13 @@
       >;
     };
 
+    // TODO: Rearrange these more logically, like with a grid on the left hand also
     fn {
       bindings = <
         /* LH */ &trans  &trans   &trans   &trans   &trans   &trans   &trans                  /* RH */                  &trans  &trans   &trans  &trans  &trans  &trans   &trans
-        /* LH */ &trans  &trans   &trans   &trans   &trans   &trans   &trans                  /* RH */                  &trans  &kp F15  &kp F7  &kp F8  &kp F9  &kp F10  &trans
-        /* LH */ &trans  &kp F19  &kp F18  &kp F17  &kp F16  &kp F15  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp F14  &kp F1  &kp F2  &kp F3  &kp F11  &trans
-        /* LH */ &trans  &kp F24  &kp F23  &kp F22  &kp F21  &kp F20                  &trans  /* RH */  &trans                  &kp F13  &kp F4  &kp F5  &kp F6  &kp F12  &trans
+        /* LH */ &trans  &kp F19  &kp F18  &kp F17  &kp F16  &kp F15  &trans                  /* RH */                  &trans  &kp F15  &kp F1  &kp F2  &kp F3  &kp F10  &trans
+        /* LH */ &trans  &kp F24  &kp F23  &kp F22  &kp F21  &kp F20  &trans  &trans  &trans  /* RH */  &trans  &trans  &trans  &kp F14  &kp F4  &kp F5  &kp F6  &kp F11  &trans
+        /* LH */ &trans  &trans   &trans   &trans   &trans   &trans                   &trans  /* RH */  &trans                  &kp F13  &kp F7  &kp F8  &kp F9  &kp F12  &trans
         /* LH */ &trans  &trans   &trans   &trans   &trans            &trans  &trans  &trans  /* RH */  &trans  &trans  &trans           &trans  &trans  &trans  &trans   &trans
       >;
     };
