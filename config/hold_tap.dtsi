@@ -2,13 +2,21 @@
 // https://zmk.dev/docs/behaviors/hold-tap
 // https://zmk.dev/docs/config/behaviors#hold-tap
 
+#pragma once
+
 #include "key_positions.dtsi"
+#include "macros.dtsi"
 
 #define DEFAULT_TAPPING_TERM_MS 200
 #define THUMB_TAPPING_TERM_MS 300
 #define HOME_MODS_TAPPING_TERM_MS 300
 #define QUICK_TAP_MS 200
 #define HOMEROW_MODS_FLAVOR "balanced"
+
+// Hold-taps using zero-parameter mod-morphs or macros in their `bindings` can
+// accept a dummy parameter, `0`.
+// https://zmk.dev/docs/keymaps/behaviors/hold-tap#using-different-behavior-types-with-hold-taps
+#define HT_NO 0
 
 // This hold-tap behavior is used for combos that contain mod-tap keys to mimic
 // a QMK-style tap-only combo.
@@ -90,6 +98,17 @@ lmt_g: lh_homerow_mod_tap_gui {
   flavor = HOMEROW_MODS_FLAVOR;
   bindings = <&kp>, <&kp>;
   hold-trigger-key-positions = <KEYS_R_GUI_SAFE THUMBS_LEFT THUMBS_RIGHT>;
+  hold-trigger-on-release;
+};
+
+llt_qas: lh_layer_tap_qwerty_alt_shift {
+  compatible = "zmk,behavior-hold-tap";
+  #binding-cells = <2>;
+  tapping-term-ms = <HOME_MODS_TAPPING_TERM_MS>;
+  quick-tap-ms = <QUICK_TAP_MS>;
+  flavor = HOMEROW_MODS_FLAVOR;
+  bindings = <&m_lm_qas>, <&kp>;
+  hold-trigger-key-positions = <KEYS_R THUMBS_LEFT THUMBS_RIGHT>;
   hold-trigger-on-release;
 };
 
