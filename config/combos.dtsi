@@ -2,6 +2,8 @@
 // https://zmk.dev/docs/features/combos
 // https://zmk.dev/docs/config/combos
 
+#pragma once
+
 #include "key_positions.dtsi"
 #include "layers.dtsi"
 #include "macros.dtsi"
@@ -11,9 +13,6 @@
 #define COMBO_ROLLED_PAIRS_REQUIRE_PRIOR_IDLE_MS 100
 
 // Both Hands
-// NOTE: I saw someone have a good idea to use combos with BSPC to generate
-// macros, often ones that send strings. See this link:
-// https://github.com/precondition/dactyl-manuform-keymap
 combo_javascript {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH23 RH15>; // S & J (D & Y)
@@ -43,6 +42,26 @@ combo_toggle_qwerty {
   timeout-ms = <COMBO_TIMEOUT_MS>;
   key-positions = <LH40 RH40>; // Bottom Left & Bottom Right Keys
   bindings = <&tog _QWERTY>;
+};
+
+// Backspace Combos
+// NOTE: I saw someone have a good idea to use combos with BSPC to generate
+// macros, often ones that send strings. See this link:
+// https://github.com/precondition/dactyl-manuform-keymap
+combo_caps_word_bspc_prefix {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RT21 LH33>; // BSPC & C
+  bindings = <&caps_word>;
+};
+combo_meh_bspc_prefix {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RT21 RH25>; // BSPC & M
+  bindings = <&sk LC(LS(LALT))>;
+};
+combo_hyper_bspc_prefix {
+  timeout-ms = <COMBO_TIMEOUT_MS>;
+  key-positions = <RT21 RH34>; // BSPC & H
+  bindings = <&sk LC(LS(LA(LGUI)))>;
 };
 
 // Left Hand
